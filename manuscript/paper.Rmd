@@ -81,27 +81,27 @@ affiliation:
     institution   : "joint senior author"
 
 authornote: |
-  This research was funded by a grant from Volkswagen Foundation (89611–2), awarded to P.K.. The data assessment in Kyoto was partly funded by a JSPS Fellowship to M.K.. We would like to thank all the research assistants who supported the data assessments and coding: Phileas Heim, Chisato Fukuda, Julia Ohlendorf, Marlene Abromeit. We are grateful to Luke Maurits for statistical advice.
+  This research was funded by a grant from Volkswagen Foundation (89611–2), awarded to P.K.. The data assessment in Kyoto was partly funded by a JSPS Fellowship to M.K.. We would like to thank all the research assistants who supported the data assessments and coding: Phileas Heim, Chisato Fukuda, Julia Ohlendorf, Marlene Abromeit. We are grateful to Luke Maurits for statistical advice. All data and analysis code can be found in the following repository: https://github.com/ccp-eva/mealtime.
 
 abstract: |
   Children all over the world learn language, yet, the contexts in which they do so varies substantially. This variation needs to be systematically quantified to build robust and generalizable theories of language acquisition. We compared communicative interactions between parents and their two-year-old children (N = 99 families) during mealtime across five cultural settings (Brazil, Ecuador, Argentina, Germany, Japan) and coded the amount of talk and gestures as well as their conversational embedding (interlocutors, speech acts, themes). We found a comparable pattern of communicative interactions across cultural settings, which were attenuated in ways that likely reflect local norms and values. These results suggest that children encounter similarly structured communicative environments across diverse cultural contexts and will inform theories of language learning.  
   
 keywords          : "Language acquisition, Communication, Gesture, Cross-cultural psychology, Parent-child interaction"
-wordcount         : "X"
+wordcount         : "7960"
 
 bibliography      : "library.bib"
 
 floatsintext      : yes
 linenumbers       : yes
 draft             : no
-mask              : no
+mask              : yes
 
 figurelist        : no
 tablelist         : no
 footnotelist      : no
 
 classoption       : "man"
-output            : papaja::apa6_pdf
+output            : papaja::apa6_docx
 ---
 
 ```{r setup, include = FALSE}
@@ -124,6 +124,12 @@ set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
+# Public significance statement
+
+Cultural norms and beliefs structure social interactions and communication. As a consequence, children learn language under very different circumstances. We studied communicative interactions between parents and their children in five diverse cultural contexts. We found a common, child-centered pattern of communication that was attenuated in line with local norms and values. This suggests that children can rely on similar information sources and learning processes across cultural contexts.
+
+# Introduction
+
 Children learn language in interactions with language-competent others [@clark2009first; @tomasello2009constructing; @bruner1983child; @levinson2014origin; @bohn2019pervasive]. Social interactions between children and their social partners are structured by norms, values, and beliefs that vary substantially across cultural and historical contexts [@rogoff2003cultural]. As a consequence, children may encounter dramatically different language learning environments. Yet, the fact that children usually achieve fluency in their local language(s) suggests that they use a suite of compensatory learning strategies to adapt flexibly to their respective learning environment [@rowe2020language; @cristia2022systematic; @kidd2022diverse]. Explaining how children accomplish this feat poses a serious theoretical and empirical challenge. Detailed documentation of learning environments across cultural contexts is needed to inform theorizing about children’s learning processes. In this paper, we contribute to this effort by reporting on cross-cultural variation in parent-child communicative interactions in a semi-structured setting: meals involving parents and their 2-year-old child.
 
 In recent decades, research on language acquisition has focused, to a large extent, on variation in language input and, in particular, the number of words children hear in naturalistic settings. This line of work was sparked by the finding that children who receive more input -- especially speech directly addressing them -- have better language skills [@hart1995meaningful; @weisleder2013talking; @bang2022spanish; @huttenlocher1991early; @walker1994prediction; @shneidman2012language]. From a theoretical perspective, more language input increases children’s opportunities for learning word-meaning mappings and allows them to build a larger vocabulary [@mcmurray2012word; @kachergis2022toward; @jones2017diversity]. The introduction of daylong audio recording devices and automated coding algorithms has provided further momentum to this endeavor [@lavechin2020open; @greenwood2011assessing; @cristia2021thorough]. As a consequence, the quantity of direct language input plays a central role in theories and formal models of language learning [@swingley2018quantitative; @braginsky2019consistency; @goodman2008does; @kachergis2022toward].
@@ -143,6 +149,10 @@ The goal of this study was to compare communicative interactions between parents
 We coded and analyzed the data along nine dimensions that focused on the quantity of talk and gestures as well as their conversational embedding (interlocutors, speech acts, themes). In a first step, we analyzed if and how these dimensions differed in the five cultural settings. In a second step, we asked whether some cultural settings are more similar to one another. The five cultural settings offer an interesting perspective on the factors influencing mealtime conversations. For example, communicative interaction patterns could cluster by country (five clusters; one cluster per country), or by language family and geographical region (three clusters; Argentina, Brazil, Ecuador vs. Germany vs. Japan) or by degree of urbanization (two clusters; urban: Argentina, Germany, Japan vs. rural: Brazil, Ecuador). Based on previous work, we expected less direct input to children in the rural contexts (Cristia, 2022) but -- given a lack of comparable previous work -- we had no specific predictions for variation in the structure of communicative interactions.
 
 # Methods
+
+## Transparency and openness.
+
+We report how we determined our sample size, all data exclusions, all manipulations, and all measures in the study. All data and analysis code can be found in the following repository: https://github.com/ccp-eva/mealtime. Data were analyzed using R, version 4.2.0 [@citeR] and the function `brm` from the package `brms` [@burkner2017brms]. We used default priors built into `brms` for all parameters. The study's design and its analysis were not pre-registered. 
 
 ## Participants
 
@@ -237,9 +247,9 @@ For each cultural setting, we selected 15% of videos and had them re-coded by a 
 
 # Analysis and Results
 
-For each of the research questions (see below), we defined a response variable and then used Bayesian multilevel regression models fit via the function `brm` from the package `brms` [@burkner2017brms] to model the effect of cultural setting and -- whenever applicable -- that of the different individuals involved in the conversation. To make inferences about the importance of predictors, we compared a set of nested models including cultural setting and individual as predictors to each other and to a null model that did not include them to test if these predictors improved model fit. Following @mcelreath2018statistical, we compared models using Widely Applicable Information Criteria (WAIC) and the corresponding weights. This approach favors models that have high out-of-sample predictive accuracy in that they achieve a good fit to the data with the minimal set of parameters.
+For each of the research questions (see below), we defined a response variable and then used Bayesian multilevel regression models to model the effect of cultural setting and -- whenever applicable -- that of the different individuals involved in the conversation. To make inferences about the importance of predictors, we compared a set of nested models including cultural setting and individual as predictors to each other and to a null model that did not include them to test if these predictors improved model fit. Following @mcelreath2018statistical, we compared models using Widely Applicable Information Criteria (WAIC) and the corresponding weights. This approach favors models that have high out-of-sample predictive accuracy in that they achieve a good fit to the data with the minimal set of parameters.
 
-We modeled the effect of cultural settings as random effects and interactions between additional variables (e.g., speaker identity) and setting as random slopes within cultural setting (`brms` notation: `(variable|setting)`). This approach partially pools model estimates and is thought to yield more generalizable results because it avoids overfitting the model to the observed data [@gelman2006data; @mcelreath2018statistical]. For each model comparison, we visualized the predictions of the winning model and interpreted them based on their posterior means and 95% Credible Intervals (CrI). We used default priors built into `brms` for all parameters.
+We modeled the effect of cultural settings as random effects and interactions between additional variables (e.g., speaker identity) and setting as random slopes within cultural setting (`brms` notation: `(variable|setting)`). This approach partially pools model estimates and is thought to yield more generalizable results because it avoids overfitting the model to the observed data [@gelman2006data; @mcelreath2018statistical]. For each model comparison, we visualized the predictions of the winning model and interpreted them based on their posterior means and 95% Credible Intervals (CrI).
 
 ## How much time did families spend talking?
 

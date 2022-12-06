@@ -25,6 +25,8 @@ auto-save-list
 tramp
 .\#*
 
+*.docx
+
 # Org-mode
 .org-id-locations
 *_archive

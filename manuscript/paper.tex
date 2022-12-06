@@ -155,7 +155,7 @@
     {}{\InnerPatchFailed}%
   }
 {}{\PatchFailed}
-\keywords{Language acquisition, Communication, Gesture, Cross-cultural psychology, Parent-child interaction\newline\indent Word count: X}
+\keywords{Language acquisition, Communication, Gesture, Cross-cultural psychology, Parent-child interaction\newline\indent Word count: 7960}
 \usepackage{lineno}
 
 \linenumbers
@@ -183,7 +183,7 @@
 
 \authornote{
 
-This research was funded by a grant from Volkswagen Foundation (89611--2), awarded to P.K.. The data assessment in Kyoto was partly funded by a JSPS Fellowship to M.K.. We would like to thank all the research assistants who supported the data assessments and coding: Phileas Heim, Chisato Fukuda, Julia Ohlendorf, Marlene Abromeit. We are grateful to Luke Maurits for statistical advice.
+This research was funded by a grant from Volkswagen Foundation (89611--2), awarded to P.K.. The data assessment in Kyoto was partly funded by a JSPS Fellowship to M.K.. We would like to thank all the research assistants who supported the data assessments and coding: Phileas Heim, Chisato Fukuda, Julia Ohlendorf, Marlene Abromeit. We are grateful to Luke Maurits for statistical advice. All data and analysis code can be found in the following repository: \url{https://github.com/ccp-eva/mealtime}.
 
 The authors made the following contributions. Manuel Bohn: Conceptualization, Methodology, Formal Analysis, Visualization, Writing -- original draft, Writing -- review \& editing; Wilson Filipe da Silva Vieira: Investigation, Writing -- review \& editing; Marta Giner Torréns: Investigation, Conceptualization, Methodology, Writing -- review \& editing; Joscha Kärtner: Investigation, Conceptualization, Methodology, Writing -- review \& editing; Shoji Itakura: Investigation, Writing -- review \& editing; Lilia Cavalcante: Investigation, Writing -- review \& editing; Daniel Haun: Investigation, Writing -- review \& editing; Moritz Köster: Conceptualization, Methodology, Investigation, Writing -- review \& editing; Patricia Kanngiesser: Conceptualization, Methodology, Investigation, Writing -- review \& editing.
 
@@ -201,6 +201,14 @@ Children all over the world learn language, yet, the contexts in which they do s
 
 \begin{document}
 \maketitle
+
+\hypertarget{public-significance-statement}{%
+\section{Public significance statement}\label{public-significance-statement}}
+
+Cultural norms and beliefs structure social interactions and communication. As a consequence, children learn language under very different circumstances. We studied communicative interactions between parents and their children in five diverse cultural contexts. We found a common, child-centered pattern of communication that was attenuated in line with local norms and values. This suggests that children can rely on similar information sources and learning processes across cultural contexts.
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
 
 Children learn language in interactions with language-competent others (Bohn \& Frank, 2019; Bruner, 1983; Clark, 2009; Levinson \& Holler, 2014; Tomasello, 2009). Social interactions between children and their social partners are structured by norms, values, and beliefs that vary substantially across cultural and historical contexts (Rogoff et al., 2003). As a consequence, children may encounter dramatically different language learning environments. Yet, the fact that children usually achieve fluency in their local language(s) suggests that they use a suite of compensatory learning strategies to adapt flexibly to their respective learning environment (Cristia, 2022; Kidd \& Garcia, 2022; Rowe \& Weisleder, 2020). Explaining how children accomplish this feat poses a serious theoretical and empirical challenge. Detailed documentation of learning environments across cultural contexts is needed to inform theorizing about children's learning processes. In this paper, we contribute to this effort by reporting on cross-cultural variation in parent-child communicative interactions in a semi-structured setting: meals involving parents and their 2-year-old child.
 
@@ -223,6 +231,11 @@ We coded and analyzed the data along nine dimensions that focused on the quantit
 
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
+
+\hypertarget{transparency-and-openness.}{%
+\subsection{Transparency and openness.}\label{transparency-and-openness.}}
+
+We report how we determined our sample size, all data exclusions, all manipulations, and all measures in the study. All data and analysis code can be found in the following repository: \url{https://github.com/ccp-eva/mealtime}. Data were analyzed using R, version 4.2.0 (R Core Team, 2022) and the function \texttt{brm} from the package \texttt{brms} (Bürkner, 2017). We used default priors built into \texttt{brms} for all parameters. The study's design and its analysis were not pre-registered.
 
 \hypertarget{participants}{%
 \subsection{Participants}\label{participants}}
@@ -317,9 +330,9 @@ For each cultural setting, we selected 15\% of videos and had them re-coded by a
 \hypertarget{analysis-and-results}{%
 \section{Analysis and Results}\label{analysis-and-results}}
 
-For each of the research questions (see below), we defined a response variable and then used Bayesian multilevel regression models fit via the function \texttt{brm} from the package \texttt{brms} (Bürkner, 2017) to model the effect of cultural setting and -- whenever applicable -- that of the different individuals involved in the conversation. To make inferences about the importance of predictors, we compared a set of nested models including cultural setting and individual as predictors to each other and to a null model that did not include them to test if these predictors improved model fit. Following McElreath (2018), we compared models using Widely Applicable Information Criteria (WAIC) and the corresponding weights. This approach favors models that have high out-of-sample predictive accuracy in that they achieve a good fit to the data with the minimal set of parameters.
+For each of the research questions (see below), we defined a response variable and then used Bayesian multilevel regression models to model the effect of cultural setting and -- whenever applicable -- that of the different individuals involved in the conversation. To make inferences about the importance of predictors, we compared a set of nested models including cultural setting and individual as predictors to each other and to a null model that did not include them to test if these predictors improved model fit. Following McElreath (2018), we compared models using Widely Applicable Information Criteria (WAIC) and the corresponding weights. This approach favors models that have high out-of-sample predictive accuracy in that they achieve a good fit to the data with the minimal set of parameters.
 
-We modeled the effect of cultural settings as random effects and interactions between additional variables (e.g., speaker identity) and setting as random slopes within cultural setting (\texttt{brms} notation: \texttt{(variable\textbar{}setting)}). This approach partially pools model estimates and is thought to yield more generalizable results because it avoids overfitting the model to the observed data (Gelman \& Hill, 2006; McElreath, 2018). For each model comparison, we visualized the predictions of the winning model and interpreted them based on their posterior means and 95\% Credible Intervals (CrI). We used default priors built into \texttt{brms} for all parameters.
+We modeled the effect of cultural settings as random effects and interactions between additional variables (e.g., speaker identity) and setting as random slopes within cultural setting (\texttt{brms} notation: \texttt{(variable\textbar{}setting)}). This approach partially pools model estimates and is thought to yield more generalizable results because it avoids overfitting the model to the observed data (Gelman \& Hill, 2006; McElreath, 2018). For each model comparison, we visualized the predictions of the winning model and interpreted them based on their posterior means and 95\% Credible Intervals (CrI).
 
 \hypertarget{how-much-time-did-families-spend-talking}{%
 \subsection{How much time did families spend talking?}\label{how-much-time-did-families-spend-talking}}
@@ -635,6 +648,9 @@ Nielsen, M., Haun, D., Kärtner, J., \& Legare, C. H. (2017). The persistent sam
 
 \leavevmode\vadjust pre{\hypertarget{ref-ochs2006cultural}{}}%
 Ochs, E., \& Shohet, M. (2006). The cultural structuring of mealtime socialization. \emph{New Directions for Child and Adolescent Development}, \emph{2006}(111), 35--49.
+
+\leavevmode\vadjust pre{\hypertarget{ref-citeR}{}}%
+R Core Team. (2022). \emph{R: A language and environment for statistical computing}. Vienna, Austria: R Foundation for Statistical Computing. Retrieved from \url{https://www.R-project.org/}
 
 \leavevmode\vadjust pre{\hypertarget{ref-rogoff2003cultural}{}}%
 Rogoff, B. et al. (2003). \emph{The cultural nature of human development}. Oxford University Press.
