@@ -4,7 +4,7 @@ shorttitle        : "Mealtime conversations in five cultural contexts"
 
 author: 
   - name          : "Manuel Bohn"
-    affiliation   : "1"
+    affiliation   : "1,2"
     corresponding : yes    # Define only one corresponding author
     address       : "Max Planck Institute for Evolutionary Anthropology, Deutscher Platz 6, 04103 Leipzig, Germany"
     email         : "manuel_bohn@eva.mpg.de"
@@ -16,48 +16,48 @@ author:
       - Writing – original draft
       - Writing – review & editing
   - name          : "Wilson Filipe da Silva Vieira"
-    affiliation   : "1"
+    affiliation   : "2"
     role:
       - Investigation
       - Writing – review & editing
   - name          : "Marta Giner Torréns"
-    affiliation   : "2"
+    affiliation   : "3"
     role:
       - Investigation
       - Conceptualization
       - Methodology
       - Writing – review & editing
   - name          : "Joscha Kärtner"
-    affiliation   : "2"
+    affiliation   : "3"
     role:
       - Investigation
       - Conceptualization
       - Methodology
       - Writing – review & editing
   - name          : "Shoji Itakura"
-    affiliation   : "3"
-    role:
-      - Investigation
-      - Writing – review & editing
-  - name          : "Lilia Cavalcante"
     affiliation   : "4"
     role:
       - Investigation
       - Writing – review & editing
+  - name          : "Lília Cavalcante"
+    affiliation   : "5"
+    role:
+      - Investigation
+      - Writing – review & editing
   - name          : "Daniel Haun"
-    affiliation   : "1"
+    affiliation   : "2"
     role:
       - Investigation
       - Writing – review & editing
   - name          : "Moritz Köster"
-    affiliation   : "5,*"
+    affiliation   : "6,*"
     role:
       - Conceptualization
       - Methodology
       - Investigation
       - Writing – review & editing
   - name          : "Patricia Kanngiesser"
-    affiliation   : "6,*"
+    affiliation   : "7,*"
     role:
       - Conceptualization
       - Methodology
@@ -66,35 +66,37 @@ author:
 
 affiliation:
   - id            : "1"
-    institution   : "Department of Comparative Cultural Psychology, Max Planck Institute for Evolutionary Anthropology, Leipzig, Germany"
+    institution   : "Institute of Psychology, Leuphana University Lüneburg, Lüneburg, Germany"
   - id            : "2"
-    institution   : "Department of Psychology, University of Münster, Münster, Germany"
+    institution   : "Department of Comparative Cultural Psychology, Max Planck Institute for Evolutionary Anthropology, Leipzig, Germany"
   - id            : "3"
-    institution   : "Doshisha University, Center for Baby Science, Kyoto, Japan"
+    institution   : "Department of Psychology, University of Münster, Münster, Germany"
   - id            : "4"
-    institution   : "Department of Behavior Theory and Research, Federal University of Pará, Belém, Brazil"
+    institution   : "Center for Baby Science, Doshisha University, Kyoto, Japan"
   - id            : "5"
-    institution   : "University of Regensburg, Institute of Psychology, Regensburg, Germany"
+    institution   : "Graduate Program in Theory and Research of Behavior, Federal University of Pará, Belém, Brazil"
   - id            : "6"
-    institution   : "University of Plymouth, School of Psychology, Plymouth, UK"
+    institution   : "Institute of Psychology, University of Regensburg, Regensburg, Germany"
+  - id            : "7"
+    institution   : "School of Psychology, University of Plymouth, Plymouth, UK"
   - id            : "*"
-    institution   : "joint senior author"
+    institution   : "joint senior authors"
 
 authornote: |
-  This research was funded by a grant from Volkswagen Foundation (89611–2), awarded to P.K.. The data assessment in Kyoto was partly funded by a JSPS Fellowship to M.K.. We would like to thank all the research assistants who supported the data assessments and coding: Phileas Heim, Chisato Fukuda, Julia Ohlendorf, Marlene Abromeit. We are grateful to Luke Maurits for statistical advice. All data and analysis code can be found in the following repository: https://github.com/ccp-eva/mealtime.
+  This research was funded by a grant from Volkswagen Foundation (89611–2), awarded to P.K.. The data assessment in Kyoto was partly funded by a JSPS Fellowship to M.K.. M.B. was supported by a Jacobs Foundation Research Fellowship. We would like to thank all the research assistants who supported the data assessments and coding: Phileas Heim, Chisato Fukuda, Julia Ohlendorf, Marlene Abromeit. We are grateful to Luke Maurits for statistical advice. All data and analysis code can be found in the following repository: https://github.com/ccp-eva/mealtime.
 
 abstract: |
-  Children all over the world learn language, yet, the contexts in which they do so varies substantially. This variation needs to be systematically quantified to build robust and generalizable theories of language acquisition. We compared communicative interactions between parents and their two-year-old children (N = 99 families) during mealtime across five cultural settings (Brazil, Ecuador, Argentina, Germany, Japan) and coded the amount of talk and gestures as well as their conversational embedding (interlocutors, speech acts, themes). We found a comparable pattern of communicative interactions across cultural settings, which were attenuated in ways that likely reflect local norms and values. These results suggest that children encounter similarly structured communicative environments across diverse cultural contexts and will inform theories of language learning.  
+  Children all over the world learn language, yet, the contexts in which they do so varies substantially. This variation needs to be systematically quantified to build robust and generalizable theories of language acquisition. We compared communicative interactions between parents and their two-year-old children (N = 99 families) during mealtime across five cultural settings (Brazil, Ecuador, Argentina, Germany, Japan) and coded the amount of talk and gestures as well as their conversational embedding (interlocutors, function, themes). We found a comparable pattern of communicative interactions across cultural settings, which were modified in ways that are consistent with local norms and values. These results suggest that children encounter similarly structured communicative environments across diverse cultural contexts and will inform theories of language learning.  
   
 keywords          : "Language acquisition, Communication, Gesture, Cross-cultural psychology, Parent-child interaction"
-wordcount         : "7960"
+wordcount         : "8454"
 
 bibliography      : "library.bib"
 
 floatsintext      : yes
 linenumbers       : yes
 draft             : no
-mask              : yes
+mask              : no
 
 figurelist        : no
 tablelist         : no
@@ -126,27 +128,34 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 
 # Public significance statement
 
-Cultural norms and beliefs structure social interactions and communication. As a consequence, children learn language under very different circumstances. We studied communicative interactions between parents and their children in five diverse cultural contexts. We found a common, child-centered pattern of communication that was attenuated in line with local norms and values. This suggests that children can rely on similar information sources and learning processes across cultural contexts.
+Cultural norms and beliefs structure social interactions and communication. As a consequence, children learn language under very different circumstances. We studied communicative interactions between parents and their children in five diverse cultural contexts. We found a common, child-centered pattern of communication that was modified in line with local norms and values. This suggests that children can rely on similar information sources and learning processes across cultural contexts.
 
 # Introduction
 
 Children learn language in interactions with language-competent others [@clark2009first; @tomasello2009constructing; @bruner1983child; @levinson2014origin; @bohn2019pervasive]. Social interactions between children and their social partners are structured by norms, values, and beliefs that vary substantially across cultural and historical contexts [@rogoff2003cultural]. As a consequence, children may encounter dramatically different language learning environments. Yet, the fact that children usually achieve fluency in their local language(s) suggests that they use a suite of compensatory learning strategies to adapt flexibly to their respective learning environment [@rowe2020language; @cristia2022systematic; @kidd2022diverse]. Explaining how children accomplish this feat poses a serious theoretical and empirical challenge. Detailed documentation of learning environments across cultural contexts is needed to inform theorizing about children’s learning processes. In this paper, we contribute to this effort by reporting on cross-cultural variation in parent-child communicative interactions in a semi-structured setting: meals involving parents and their 2-year-old child.
 
-In recent decades, research on language acquisition has focused, to a large extent, on variation in language input and, in particular, the number of words children hear in naturalistic settings. This line of work was sparked by the finding that children who receive more input -- especially speech directly addressing them -- have better language skills [@hart1995meaningful; @weisleder2013talking; @bang2022spanish; @huttenlocher1991early; @walker1994prediction; @shneidman2012language]. From a theoretical perspective, more language input increases children’s opportunities for learning word-meaning mappings and allows them to build a larger vocabulary [@mcmurray2012word; @kachergis2022toward; @jones2017diversity]. The introduction of daylong audio recording devices and automated coding algorithms has provided further momentum to this endeavor [@lavechin2020open; @greenwood2011assessing; @cristia2021thorough]. As a consequence, the quantity of direct language input plays a central role in theories and formal models of language learning [@swingley2018quantitative; @braginsky2019consistency; @goodman2008does; @kachergis2022toward].
+In recent decades, research on language acquisition has focused, to a large extent, on variation in language input and, in particular, the number of words children hear in naturalistic settings. This line of work was sparked by the finding that children who receive more input -- especially speech directly addressing them -- have larger vocabularies [@hart1995meaningful; @weisleder2013talking; @bang2022spanish; @huttenlocher1991early; @walker1994prediction; @shneidman2012language]. From a theoretical perspective, more language input increases children’s opportunities for learning word-meaning mappings and allows them to build a larger vocabulary [@mcmurray2012word; @kachergis2022toward; @jones2017diversity]. The introduction of daylong audio recording devices and automated coding algorithms has provided further momentum to this endeavor [@lavechin2020open; @greenwood2011assessing; @cristia2021thorough]. As a consequence, the quantity of direct language input plays a central role in theories and formal models of language learning [@swingley2018quantitative; @braginsky2019consistency; @goodman2008does; @kachergis2022toward].
 
-However, like most of developmental psychology [@nielsen2017persistent; @amir2020cross], research on language acquisition has largely focused on affluent societies of the global north and, as a consequence, the resulting theoretical proposals may fail to generalize to other cultural contexts. As studies in a greater variety of cultural settings have begun to accumulate [@casillas2021early; @bergelson2019north; @bunce2020cross; @loukatou2021child; @cristia2019child; @altinkamics2014context; @choi2000caregiver; @tardif1997caregiver], they have revealed substantial cultural variation in how much direct input children receive [@cristia2022systematic; see also @sperry2019reexamining for variation within an English-speaking sample]. Yet, children still reach major milestones in language development at similar ages [@casillas2020early; @brown2014language]. These findings highlight that theories and models of language learning need to extend beyond quantity of input and also include learning processes that compensate for variation in input [@kachergis2022toward; @jones2017diversity; @meylan2022learning; @bang2022time; @casillas2022learning].
+However, like most of developmental psychology [@nielsen2017persistent; @amir2020cross], research on language acquisition has largely focused on affluent societies of the Global North and the resulting theoretical proposals may fail to generalize to other cultural contexts. As studies in a greater variety of cultural settings have begun to accumulate [@casillas2021early; @bergelson2019north; @bunce2020cross; @loukatou2021child; @cristia2019child; @altinkamics2014context; @choi2000caregiver; @tardif1997caregiver], they have revealed substantial cultural variation in how much direct input children receive [@cristia2022systematic; see also @sperry2019reexamining for variation within an English-speaking sample]. Yet, children still reach major milestones in language development at similar ages [@casillas2020early; @brown2014language]. These findings highlight that theories and models of language learning need to extend beyond quantity of input and also include learning processes that compensate for variation in input [@kachergis2022toward; @jones2017diversity; @meylan2022learning; @bang2022time; @casillas2022learning].
 
-It has been suggested that these compensatory learning processes leverage structural features of social interactions in which language is used [@rogoff2003firsthand; @casillas2020early; @shneidman2012language; @shneidman2016child]. Pragmatic accounts of language learning offer an explanation for how children use contextual information [e.g., @bohn2019pervasive; @tomasello2009constructing]: Social interactions, especially routines, follow predictable patterns that make it easier for children to infer what speakers are communicating about [@lieven1994crosslinguistic; @de2022ten; @masek2021beyond]. For instance, @roy2015predicting found that words were more easily learned when they were primarily used in a distinct spatial and temporal context. Similarly, establishing common ground over the course of an interaction provides information about the speaker’s intention independent of the words that are being used [@bohn2018common; @bohn2021young]. For example, @bohn_le_peloquin_koymen_frank_2020 showed that children identify the referent of an ambiguous word by inferring the topic of an ongoing conversation [see also @akhtar2002relevance]. These findings help to explain why the amount of conversational turn-taking in parent-child interactions predicts child language outcomes [@romeo2018beyond; @donnelly2021longitudinal]. Turn-taking results in continuous, structured conversations that provide information-rich learning opportunities.
+It has been suggested that these compensatory learning processes leverage structural features of social interactions in which language is used [@rogoff2003firsthand; @casillas2020early; @shneidman2012language; @shneidman2016child]. Pragmatic accounts of language learning offer an explanation for how children use contextual information [e.g., @bohn2019pervasive; @tomasello2009constructing]: Social interactions, especially routines, follow predictable patterns that make it easier for children to infer what speakers are communicating about [@lieven1994crosslinguistic; @de2022ten; @masek2021beyond; @bruner1983child; @vygotsky1978mind]. For instance, @roy2015predicting found that words were more easily learned when they were primarily used in a distinct spatial and temporal context. Similarly, establishing common ground over the course of an interaction provides information about the speaker’s intention independent of the words that are being used [@bohn2018common; @bohn2021young]. For example, @bohn_le_peloquin_koymen_frank_2020 showed that children identify the referent of an ambiguous word by inferring the topic of an ongoing conversation [see also @akhtar2002relevance]. These findings help to explain why the amount of conversational turn-taking in parent-child interactions predicts child language outcomes [@romeo2018beyond; @donnelly2021longitudinal]. Turn-taking results in continuous, structured conversations that provide information-rich learning opportunities.
 
-In order to assess whether children can use structural features to complement direct verbal input, it is crucial to compare communicative interactions between adults and children across cultural settings. However, to our knowledge, there are very few quantitative comparisons. While ethnographic descriptions offer important and rich insights into individual cultural settings [see e.g., @de2011language; @gaskins2006cultural], quantitative comparisons are essential for understanding gradual cultural differences [@koester2022parental; @broesch2021opportunities; @hewlett1998culture] and offer core input for theory building (see language input studies discussed earlier).
+To assess whether children can use structural features to complement direct verbal input, it is crucial to compare communicative interactions between adults and children across cultural settings. However, to our knowledge, there are very few quantitative comparisons. While ethnographic descriptions offer important and rich insights into individual cultural settings [see e.g., @de2011language; @gaskins2006cultural], quantitative comparisons are essential for understanding gradual cultural differences [@koester2022parental; @broesch2021opportunities; @hewlett1998culture] and offer core input for theory building.
 
-One of the challenges of cross-cultural work lies in selecting an appropriate context for comparing the structure of communicative interactions [@broesch2022roadmap]. Prior work has shown that the amount of language input children receive varies substantially across routine activities. For example, @soderstrom2013caregivers found that Canadian adults spoke most during book reading and structured playtime [see also @tamis2019routine]. Such activities, however, are very specific to industrialized societies and less frequent or absent in other cultural contexts. A cross-culturally recurrent, and hence particularly promising, context for cross-cultural research is mealtime: across societies, meals are social events that are structured by -- and used to transmit -- cultural norms, values and beliefs [@ochs2006cultural; @fjellstrom2004mealtime; @blum2012dinner; @koester2022parental]. Furthermore, mealtimes have been a fruitful context for studying caregiver-child communication, for example, in the U.S. [e.g., @beals1993explanatory; @beals1997sources; @snow2006mealtime].
+One of the challenges of cross-cultural work lies in selecting an appropriate context for comparing the structure of communicative interactions [@broesch2022roadmap]. Prior work has shown that the amount of language input children receive varies substantially across routine activities. For example, @soderstrom2013caregivers found that Canadian adults spoke most during book reading and structured playtime [see also @tamis2019routine]. Such activities, however, are very specific to industrialized societies and less frequent or absent in other cultural contexts. A cross-culturally recurrent, and hence particularly promising, context for cross-cultural research are mealtimes: across societies, meals are social events that are structured by -- and used to transmit -- cultural norms, values and beliefs [@ochs2006cultural; @fjellstrom2004mealtime; @blum2012dinner; @koester2022parental]. Furthermore, mealtimes have proven fruitful for studying caregiver-child communication in cultural contexts like the U.S. [e.g., @beals1993explanatory; @beals1997sources; @snow2006mealtime].
 
 # The current study
 
-The goal of this study was to compare communicative interactions between parents and their children during mealtime across diverse cultural settings. We aimed for a naturalistic but comparable setup by a) asking families to record in their homes, b) recruiting families with a single -- usually the first -- child between 2 and 3 years of age and c) focusing on 10-minute-long episodes during which three family members (mother, father, one child) were present. Even though the constellation of two parents and one child might be less representative of the overall family demographics in some settings, it allowed us to directly quantify and compare communicative interactions. We obtained recordings from five different cultural settings, including families living in the Global South and North, as well as in urban and rural settings: the city of Buenos Aires, Argentina, small villages in the Apeú region, Brazil, small villages close to Cotacachi, Ecuador, the city of Münster, Germany, and the city of Kyoto, Japan.
+The goal of this study was to compare communicative interactions between parents and their children during mealtimes across diverse cultural settings. We aimed for a naturalistic but comparable setup by a) asking families to record in their homes, b) recruiting families with a single -- usually the first -- child between 2 and 3 years of age and c) focusing on 10-minute-long episodes during which three family members (mother, father, one child) were present. Even though the constellation of two parents and one child might be less representative of the overall family demographics in some settings, it allowed us to directly quantify and compare communicative interactions. 
 
-We coded and analyzed the data along nine dimensions that focused on the quantity of talk and gestures as well as their conversational embedding (interlocutors, speech acts, themes). In a first step, we analyzed if and how these dimensions differed in the five cultural settings. In a second step, we asked whether some cultural settings are more similar to one another. The five cultural settings offer an interesting perspective on the factors influencing mealtime conversations. For example, communicative interaction patterns could cluster by country (five clusters; one cluster per country), or by language family and geographical region (three clusters; Argentina, Brazil, Ecuador vs. Germany vs. Japan) or by degree of urbanization (two clusters; urban: Argentina, Germany, Japan vs. rural: Brazil, Ecuador). Based on previous work, we expected less direct input to children in the rural contexts (Cristia, 2022) but -- given a lack of comparable previous work -- we had no specific predictions for variation in the structure of communicative interactions.
+We obtained recordings from five different cultural settings, including families living in the Global South and the Global North, as well as in urban and rural settings: the city of Buenos Aires  in Argentina, small villages in the Amazon region near Apeú in Brazil), small villages close to Cotacachi in Ecuador, the city of Münster in Germany, and the city of Kyoto in Japan. This sample was first and foremost a convenience sample of families in diverse cultural settings we had worked with previously. This continues to be a common approach in larger-scale cross-cultural, developmental studies [@house2013ontogeny; @house2020universal; @kanngiesser2022children; @blake2015ontogeny] and is often the first step when little substantive cross-cultural data exists to inform targeted comparisons. Nevertheless, in addition to their geographic spread and variation in population density, the settings also varied in cultural norms and beliefs about communication during mealtimes. In Germany, meals are seen as a privileged time for communication and exchange [@danesi2018cross]. Similarly, in Argentina, dinners are an important opportunity for family conversations  because it is usually the only time when the whole family gets together [@aguirre2016olla]. In contrast, within the Kichwa indigenous people in Ecuador meals are supposed to be taken in silence [@sanchez2010oficio]. In Japan, both views are common and whether or not talk is encouraged depends, in part, on the eating arrangements [@imada2020traditional]. As such, our sample provided us with the opportunity to study if and how different cultural mealtime norms impact real-world communicative interactions.
+
+We coded and analyzed our video data along several dimensions, focusing on the quantity of talk and gestures as well as their conversational embedding . We chose dimensions that have been implicated as relevant for child language acquisition, but have rarely been studied from a cross-cultural perspective. First, we coded the presence (or absence) of speech, the identity of the speaker and the recipient. This allowed us to quantify how much directed talk – as opposed to overheard talk – children received and from whom. As noted above, cross-cultural variation in talk directed at the child has profound theoretical implications because it questions the privileged role given to direct input in many theoretical accounts of language learning. Coding speaker identity provided insight into who children receive language input from. Cross-cultural research on different sources of language input is relatively scarce: most past studies have exclusively focused on maternal talk and only recently have researchers begun to investigate paternal talk [@ferjan2022fathers]. By coding the language produced by children themselves, we were able to quantify children’s role in shaping their linguistic environment across cultural contexts [@tamis2018taking; @donnellan2020infants]. In addition to speech, we also coded the production of gestures. A substantial body of research has shown that gestures produced by children and their caregivers relate to child language competency -- at least in children growing up in the Global North [e.g., @rowe2008learning; @colonnesi2010relation]. Here, the view is that gestures act as a complementary source of input that reference objects and events in the environment and thereby facilitate word learning [@tomasello2005constructing]. 
+
+Second, we coded how utterances were grouped into themes. This approach allowed us to quantify cross-cultural variation in how conversations are structured. Research on conversational turn-taking has suggested a link between these structural features and language learning [@donnelly2021longitudinal; @romeo2018beyond]; yet, a cross cultural perspective is still largely missing. Finally, we coded the function of utterances and distinguished between questions, assertions and imperatives. Questions play a role in facilitating language acquisition because they encourage verbal responses from children which may include labels for objects [@blake2006book]. There is also suggestive evidence of cultural variation in how parents use functional elements of language such as questions [@kuchirko2020say]. 
+
+For the analysis, we first assessed  if and how these coded  dimensions differed in the five cultural settings. In a second step, we asked whether some cultural settings are more similar to one another. The five cultural settings offer an interesting perspective on the factors influencing mealtime conversations. For example, communicative interaction patterns could cluster by country (five clusters; one cluster per country), or by language family and geographical region (three clusters; Argentina, Brazil, Ecuador vs. Germany vs. Japan) or by degree of urbanization (two clusters; urban: Argentina, Germany, Japan vs. rural: Brazil, Ecuador). Based on previous work, we expected less direct input to children in the rural contexts [@cristia2022systematic]. Due to different cultural norms around mealtime conversations, we predicted less overall talk in Ecuador compared to Germany, with Japan falling somewhere in the middle.  Given a lack of comparable previous work -- we had no specific predictions for variation in the structure of communicative interactions.
+
 
 # Methods
 
@@ -164,7 +173,7 @@ dem <- data%>%
   summarise(n = n_distinct(family))
 ```
 
-The final sample consisted of `r sum(dem$n)` families from five cultural contexts. This included `r dem%>%filter(country == "Argentina")%>%pull(n)` families from the city of Buenos Aires, Argentina (urban setting), `r dem%>%filter(country == "Brazil")%>%pull(n)` families from villages in the Amazon region near Apeú, Brazil (rural setting), `r dem%>%filter(country == "Ecuador")%>%pull(n)` from villages near Cotacachi, Ecuador (rural setting), `r dem%>%filter(country == "Germany")%>%pull(n)` families from the city of Münster, Germany (urban setting) and `r dem%>%filter(country == "Japan")%>%pull(n)` families from the city of Kyoto, Japan (urban setting). For the recording sessions, all families comprised a father, a mother and a child aged between 2 years and 3 years, 2 months. Almost all children were the first child in the family. Some videos partly included additional children (n = 1 for Argentina, Brazil and Ecuador).
+The final sample consisted of `r sum(dem$n)` families from five cultural contexts. This included `r dem%>%filter(country == "Argentina")%>%pull(n)` families from the city of Buenos Aires, Argentina (urban setting), `r dem%>%filter(country == "Brazil")%>%pull(n)` families from villages in the Amazon region near Apeú, Brazil (rural setting), `r dem%>%filter(country == "Ecuador")%>%pull(n)` from villages near Cotacachi, Ecuador (rural setting), `r dem%>%filter(country == "Germany")%>%pull(n)` families from the city of Münster, Germany (urban setting) and `r dem%>%filter(country == "Japan")%>%pull(n)` families from the city of Kyoto, Japan (urban setting). For the recording sessions, all families comprised a father, a mother and a child aged between 2 years and 3 years, 2 months. Almost all children were the first child in the family. Some videos partly included additional children (n = 1 for Argentina, Brazil and Ecuador, respectively).
 
 Additional families were recorded but they did not meet the inclusion criteria of at least one recording of a meal that lasted for at least ten minutes, initially included all three family members and had all family members visible in the recording. This resulted in the exclusion of 11 families from Münster, Germany, 34 from Apeú, Brazil, five from Buenos Aires, Argentina, 39 from Cotacachi, Ecuador and five from Kyoto, Japan.
 
@@ -176,7 +185,7 @@ Families lived in the metropolitan area of Buenos Aires, Argentina, which compri
 
 ### Brazil
 
-Families lived in villages of around 50 - 300 families in the Amazon region near Apeú, approximately 1.5 hours east of Belém, the capital of the state of Pará. They were recruited with the help of a local public health office. The family language was Brazilian Portuguese. Compensation included small toys for children and a certificate of participation for parents. Most parents had completed secondary school (~12 years of schooling, mothers: 50%; fathers: 56%). Mothers worked mainly as housewives (83%) while fathers engaged in paid labor (100%). Some families engaged in traditional subsistence activities such as tapioca farming, livestock breeding, or acaí and fruit harvesting. In line with employment status, the majority of children were looked after by their mothers.
+Families lived in villages of around 50 - 300 families in the Amazon region near Apeú, approximately 1.5 hours east of Belém, the capital of the state of Pará. They were recruited with the help of a local public health office. The family language was Brazilian Portuguese. Compensation included small toys for children and a certificate of participation for parents. Most parents had completed secondary school (~12 years of schooling, mothers: 50%; fathers: 56%). Mothers worked mainly as housewives (83%) while fathers engaged in paid labor (100%). Some families engaged in traditional subsistence activities such as tapioca farming, livestock breeding, or açaí and fruit harvesting. In line with employment status, the majority of children were looked after by their mothers.
 
 ### Ecuador
 
@@ -207,29 +216,29 @@ In a first pass, the primary coder created a tier for each speaker and marked se
 
 ### Speaker 
 
-Here we coded who produced the utterance. The speaker could either be `child`, `mother`, or `father`. All sections containing no speech were coded as `silence`.
+Here we coded who produced the utterance. The speaker could either be `child`, `mother`, or `father`. All sections containing no speech were coded as `non-talk`.
 
 ### Recipient
 
 Here we coded who the utterance was addressed to. Codes could either be `child`, `mother`, `father`, `both` or `other`, where `other` was used either when a fourth person (e.g., over the phone) was addressed or the speaker was talking to themselves (e.g., child babbling or singing). If an utterance addressed two people in sequence, the second addressee was coded as the recipient.
 
-### Themes and rounds
+### Themes and utterances
 
-Here we coded the conversational coherence of the different utterances. For that we defined `themes` as sequences of utterances that related to one another. This applies for example to sequences of questions and answers but also to sequences in which the content of an utterance is directly related to the content of the previous utterance. Please note that such themes were coded locally and were not the same as topics. For example, if father and child exchanged four utterances about the child’s day in the kindergarten this was coded as one theme. If the same topic (day at the kindergarten) came up later again, this was coded as a separate theme. Each utterance within a theme was counted as a `round` to capture the sequence and length of a theme. Thus, each utterance was assigned a number for the theme and a number for the round within theme. Themes could have interjections of one or two utterances. After more than two interjections we coded a new theme. For example, if father and child talked about food and the mother made an unrelated comment in between, the mother’s comment would be coded as a separate theme while the other theme continued around it:
+Here we coded the conversational coherence of the different utterances. For that we defined `themes` as sequences of utterances that related to one another. This applies for example to sequences of questions and answers but also to sequences in which the content of an utterance is directly related to the content of the previous utterance. Please note that such themes were coded locally and were not the same as topics. For example, if father and child exchanged four utterances about the child’s day in the kindergarten this was coded as one theme. If the same topic (day at the kindergarten) came up later again, this was coded as a separate theme. Each utterance within a theme was counted to capture the sequence and length of a theme. Thus, each utterance was assigned a number for the theme and a number for the utterance within the theme. Themes could have interjections of one or two utterances. After more than two interjections we coded a new theme. For example, if father and child talked about food and the mother made an unrelated comment in between, the mother’s comment would be coded as a separate theme while the other theme continued around it:
 
-Child: "I want more"	 			        (theme (t) 1, round (r) 1)
+Child: "I want more"	 			        (theme (t) 1, utterance (u) 1)
 
-Father: "Do you want more soup?"		(t1, r2)
+Father: "Do you want more soup?"		(t1, u2)
 
-Mother: "Phew, I'm hot			        (t2, r1)
+Mother: "Phew, I'm hot			        (t2, u1)
 
-Child: "No, bread				            (t1, r3)
+Child: "No, bread				            (t1, u3)
 
-Father: "I'll get some"			        (t1, r4)
+Father: "I'll get some"			        (t1, u4)
 
-### Speech acts
+### Functional elements
 
-Each utterance was coded as either being a `question`, `assertion` or `imperative`. Imperatives were only coded if the the utterance was grammatically structured as an imperative. For example "Pass me the salt!" was coded as an imperative while "You should give me the salt." was not.
+Each utterance was coded as either being a `question`, `assertion` or `imperative`. Imperatives were only coded if the utterance was grammatically structured as an imperative. For example "Pass me the salt!" was coded as an imperative while "You should give me the salt." was not.
 
 ### Referential gestures
 
@@ -243,13 +252,15 @@ reli <- read_csv("../data/reliability.csv")%>%
   mutate(match = round(match*100))
 ```
 
-For each cultural setting, we selected 15% of videos and had them re-coded by a second coder (native speaker of the respective language). The second coder relied on the sequencing of the primary coder. Inter-rater reliability was generally very good. For recipient, the agreement between coders was `r reli%>%filter(type == "recipient")%>%pull(match)`% ($\kappa$ = `r reli%>%filter(type == "recipient")%>%pull(kappa)`), for speech acts it was `r reli%>%filter(type == "speechact")%>%pull(match)`% ($\kappa$ = `r reli%>%filter(type == "speechact")%>%pull(kappa)`) and for gestures it was `r reli%>%filter(type == "gesture")%>%pull(match)`% ($\kappa$ = `r reli%>%filter(type == "gesture")%>%pull(kappa)`). To get inter-rater reliability for the coding of themes, we asked whether the two coders agreed on whether a given utterance belonged to the same theme as the previous utterance or belonged to a new theme. Once again, agreement between coders was high (agreement = `r reli%>%filter(type == "theme")%>%pull(match)`%, $\kappa$ = `r reli%>%filter(type == "theme")%>%pull(kappa)`).
+For each cultural setting, we selected 15% of videos and had them re-coded by a second coder (native speaker of the respective language). The second coder relied on the sequencing of the primary coder. Inter-rater reliability was generally very good. For recipient, the agreement between coders was `r reli%>%filter(type == "recipient")%>%pull(match)`% ($\kappa$ = `r reli%>%filter(type == "recipient")%>%pull(kappa)`), for function it was `r reli%>%filter(type == "speechact")%>%pull(match)`% ($\kappa$ = `r reli%>%filter(type == "speechact")%>%pull(kappa)`) and for gestures it was `r reli%>%filter(type == "gesture")%>%pull(match)`% ($\kappa$ = `r reli%>%filter(type == "gesture")%>%pull(kappa)`). To get inter-rater reliability for the coding of themes, we asked whether the two coders agreed on whether a given utterance belonged to the same theme as the previous utterance or belonged to a new theme. Once again, agreement between coders was high (agreement = `r reli%>%filter(type == "theme")%>%pull(match)`%, $\kappa$ = `r reli%>%filter(type == "theme")%>%pull(kappa)`).
 
 # Analysis and Results
 
-For each of the research questions (see below), we defined a response variable and then used Bayesian multilevel regression models to model the effect of cultural setting and -- whenever applicable -- that of the different individuals involved in the conversation. To make inferences about the importance of predictors, we compared a set of nested models including cultural setting and individual as predictors to each other and to a null model that did not include them to test if these predictors improved model fit. Following @mcelreath2018statistical, we compared models using Widely Applicable Information Criteria (WAIC) and the corresponding weights. This approach favors models that have high out-of-sample predictive accuracy in that they achieve a good fit to the data with the minimal set of parameters.
+For each of the research questions (see below), we defined a response variable and then used Bayesian multilevel regression models to model the effect of cultural setting and -- whenever applicable -- that of the different individuals involved in the conversation. To make inferences about the importance of predictors, we compared a set of nested models including cultural setting and individual as predictors to each other and to a null model that did not include them to test if these predictors improved model fit. Following @mcelreath2018statistical, we compared models using Widely Applicable Information Criteria (WAIC). This approach favors models that have high out-of-sample predictive accuracy in that they achieve a good fit to the data with the minimal set of parameters.
 
-We modeled the effect of cultural settings as random effects and interactions between additional variables (e.g., speaker identity) and setting as random slopes within cultural setting (`brms` notation: `(variable|setting)`). This approach partially pools model estimates and is thought to yield more generalizable results because it avoids overfitting the model to the observed data [@gelman2006data; @mcelreath2018statistical]. For each model comparison, we visualized the predictions of the winning model and interpreted them based on their posterior means and 95% Credible Intervals (CrI).
+We modeled the effect of cultural settings as random effects and interactions between additional variables (e.g., speaker identity) and setting as random slopes within cultural setting (`brms` notation: `(variable|setting)`). This approach partially pools model estimates and is thought to yield more generalizable results because it avoids overfitting the model to the observed data [@gelman2006data; @mcelreath2018statistical]. For each model comparison, we report the difference in WAIC estimates, the standard error of the difference and the weight of each model. Model weights give the probability that a model will make the best predictions out of all the models considered.
+
+Each model comparison has a "winning" model, that is, a model that has the lowest WAIC value and the highest weight and thus, the highest expected out-of-sample predictive accuracy. However, two models can be more or less equivalent when the difference in WAIC is small and the standard error of the difference is larger than the difference in WAIC. In addition to the model comparison, we visualize the predictions of the winning model and interpret them based on their posterior means and 95% Credible Intervals (CrI).
 
 ## How much time did families spend talking?
 
@@ -299,13 +310,14 @@ fix_b1_1 <- fixef(bm1_1)%>%as_tibble(rownames = "term")%>%mutate_if(is.numeric, 
 #   geom_point(data = silence_data, aes(x = silence, y = country),pch = 1,alpha = .5)+
 #   stat_halfeye(alpha = .75, .width = c(0.66, 0.95),)+
 #   xlim(0,10)+
-#   labs(x = "Silence in minutes", y = "")+
+#   labs(x = "Non-talk in minutes", y = "")+
 #   theme_bw()
 ```
 
-First, we ask how much time families spent talking as opposed to being silent and how this varied across cultural settings. The dependent variable in this case was the total lengths of all sections coded as silence for each family (modeled as a normal distribution). We compared a null model including only an overall intercept (`silence ~ 1`) to a model including cultural setting (`silence ~ 1 + (1|setting)`).
+First, we ask how much time families spent talking as opposed to not talking and how this varied across cultural settings. The dependent variable in this case was the total lengths of all sections coded as non-talk for each family (modeled as a normal distribution). We compared a null model including only an overall intercept (`non-talk ~ 1`) to a model including cultural setting (`non-talk ~ 1 + (1|setting)`)^[One might suspect that the child’s age influences their own behavior or that of the parents. To explore this possibility, we added models including child age as a predictor to the model comparison for the first three models (overall talk, talk per speaker and talk received by each individual). The inclusion of age did not improve the fit of the otherwise best fitting model any further. In the interest of space and readability, we do not report these models here. However, age is included in the data set available in the associated repository so interested readers can further explore the relation between age and the variables we coded.
+].
 
-The model comparison clearly favored the model including cultural setting (WAIC = `r comp_silence%>%filter(model == "bm1_1")%>%pull(waic)`, se = `r comp_silence%>%filter(model == "bm1_1")%>%pull(se_waic)`, weight = `r comp_silence%>%filter(model == "bm1_1")%>%pull(weight)`) over the null model (WAIC = `r comp_silence%>%filter(model == "bm1_0")%>%pull(waic)`, se = `r comp_silence%>%filter(model == "bm1_0")%>%pull(se_waic)`, weight = `r comp_silence%>%filter(model == "bm1_0")%>%pull(weight)`). The model predicted an average of `r fix_b1_1%>%pull(Estimate)` [95%CrI = `r fix_b1_1%>%pull(Q2.5)` - `r fix_b1_1%>%pull(Q97.5)`] minutes of silence across cultural settings. Ecuador and Brazil had longer sections of silence compared to Argentina and Germany, with Japan falling in the middle (see Figure \@ref(fig:fig1)A). 
+The model comparison clearly favored the model including cultural setting (WAIC = `r comp_silence%>%filter(model == "bm1_1")%>%pull(waic)`, se = `r comp_silence%>%filter(model == "bm1_1")%>%pull(se_waic)`, weight > 0.99) over the null model (WAIC = `r comp_silence%>%filter(model == "bm1_0")%>%pull(waic)`, se = `r comp_silence%>%filter(model == "bm1_0")%>%pull(se_waic)`, weight < 0.01). The difference in WAIC (dWAIC) was = `r comp_silence%>%filter(model == "bm1_0")%>%pull(elpd_diff)` with a standard error of `r comp_silence%>%filter(model == "bm1_0")%>%pull(se_diff)`. The model predicted an average of `r fix_b1_1%>%pull(Estimate)` [95%CrI = `r fix_b1_1%>%pull(Q2.5)` - `r fix_b1_1%>%pull(Q97.5)`] minutes of non-talk across cultural settings. Ecuador and Brazil had longer sections of non-talk compared to Argentina and Germany, with Japan falling in the middle (see Figure \@ref(fig:fig1)A). 
 
 ## How much talk is directed at each family member?
 
@@ -327,7 +339,7 @@ input_data <- data%>%
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm2_1 <- brm(input ~ recipient + (1|family) + (1|country),
 #            data = input_data,
@@ -336,7 +348,7 @@ input_data <- data%>%
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm2_2 <- brm(input ~ recipient + (1|family) + (recipient|country),
 #            data = input_data,
@@ -345,7 +357,7 @@ input_data <- data%>%
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # comp_input <- left_join(
 #   loo_compare(bm2_2, bm2_1, bm2_0, criterion = "waic")%>%as_tibble(rownames = "model"),
@@ -362,9 +374,9 @@ bm2_1 <- readRDS("../saves/bm2_1.rds")
 fix_bm2_2 <- fixef(bm2_1)%>%as_tibble(rownames = "term")%>%mutate_if(is.numeric, round, 2)
 ```
 
-Next, we asked whom talk was directed to, that is, how much “input” each family member received. The dependent variable was the total lengths of utterances directed at each individual in a family. This variable was right-skewed and we therefore modeled it as a skewed normal distribution. Given that the analysis above showed that the amount of overall talk differed across cultural settings, the null model already included a random effect for setting (`input ~ 1 + (1|setting) + (1|family)`). We compared it to two alternative models, one assuming that input additionally differed across recipients (`input ~ recipient + (1|setting) + (1|family)`) and one assuming that this effect in turn varies across settings (`input ~ recipient + (recipient|setting) + (1|family)`).
+Next, we asked whom the talk was directed to, that is, how much “input” each family member received. The dependent variable was the total lengths of utterances directed at each individual in a family. This variable was right-skewed and we therefore modeled it as a skewed normal distribution. Given that the analysis above showed that the amount of overall talk differed across cultural settings, the null model already included a random effect for setting (`input ~ 1 + (1|setting) + (1|family)`). We compared it to two alternative models, one assuming that input additionally differed across recipients (`input ~ recipient + (1|setting) + (1|family)`) and one assuming that this effect in turn varies across settings (`input ~ recipient + (recipient|setting) + (1|family)`).
 
-The model comparison favored the two alternative models, with a slight preference for the simpler model that did not assume the effect of recipients to vary across cultural setting (WAIC = `r comp_input%>%filter(model == "bm2_1")%>%pull(waic)`, se = `r comp_input%>%filter(model == "bm2_1")%>%pull(se_waic)`, weight = `r comp_input%>%filter(model == "bm2_1")%>%pull(weight)`; model assuming variation across settings: WAIC = `r comp_input%>%filter(model == "bm2_2")%>%pull(waic)`, se = `r comp_input%>%filter(model == "bm2_2")%>%pull(se_waic)`, weight = `r comp_input%>%filter(model == "bm2_2")%>%pull(weight)`). We observed that, across settings, more talk was directed at children compared to the two parents with fathers being talked to the least (see \@ref(fig:fig1)B).
+The model comparison clearly favored the two alternative models, with a slight preference for the simpler model that did not assume the effect of recipients to vary across cultural setting (WAIC = `r comp_input%>%filter(model == "bm2_1")%>%pull(waic)`, se = `r comp_input%>%filter(model == "bm2_1")%>%pull(se_waic)`, weight = `r comp_input%>%filter(model == "bm2_1")%>%pull(weight)`; model assuming variation across settings: WAIC = `r comp_input%>%filter(model == "bm2_2")%>%pull(waic)`, se = `r comp_input%>%filter(model == "bm2_2")%>%pull(se_waic)`, weight = `r comp_input%>%filter(model == "bm2_2")%>%pull(weight)`; dWAIC = `r comp_input%>%filter(model == "bm2_2")%>%pull(elpd_diff)`, SE(dWAIC) = `r comp_input%>%filter(model == "bm2_2")%>%pull(se_diff)`). We observed that, across settings, more talk was directed at children compared to the two parents with fathers being talked to the least (see Figure \@ref(fig:fig1)B).
 
 ```{r}
 # post_input <-input_data%>%
@@ -397,7 +409,7 @@ The model comparison favored the two alternative models, with a slight preferenc
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm3_1 <- brm(talk ~ speaker + (1|family) + (1|country),
 #            data = talk_data,
@@ -406,7 +418,7 @@ The model comparison favored the two alternative models, with a slight preferenc
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm3_2 <- brm(talk ~ speaker + (1|family) + (speaker|country),
 #            data = talk_data,
@@ -415,7 +427,7 @@ The model comparison favored the two alternative models, with a slight preferenc
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # comp_talk <- left_join(
 #   loo_compare(bm3_2, bm3_1, bm3_0, criterion = "waic")%>%as_tibble(rownames = "model"),
@@ -451,7 +463,7 @@ fix_bm3_2 <- fixef(bm3_2)%>%as_tibble(rownames = "term")%>%mutate_if(is.numeric,
 
 In the next analysis, we asked how talking time was distributed across the different family members. The dependent variable was the total lengths of utterances of each individual in a family, which was also right-skewed and modeled as a skewed normal distribution. Given previous results, the null model included a random effect for setting (`talk ~ 1 + (1|setting) + (1|family)`). The first alternative model assumed that talk differed across speakers (`talk ~ recipient + (1|setting) + (1|family)`), the second assumed that this effect interacted with setting (`talk ~ recipient + (recipient|setting) + (1|family)`).
 
-The model comparison clearly favored the interaction model assuming that the the difference between speakers varied across settings (WAIC = `r comp_talk%>%filter(model == "bm3_2")%>%pull(waic)`, se = `r comp_talk%>%filter(model == "bm3_2")%>%pull(se_waic)`, weight = `r comp_talk%>%filter(model == "bm3_2")%>%pull(weight)`; model assuming no interaction: WAIC = `r comp_talk%>%filter(model == "bm3_1")%>%pull(waic)`, se = `r comp_talk%>%filter(model == "bm3_1")%>%pull(se_waic)`, weight = `r comp_talk%>%filter(model == "bm3_1")%>%pull(weight)`). Figure \@ref(fig:fig1)C shows that even though mothers talked the most in all settings, this effect was much more pronounced in Japan, Germany and Argentina compared to Ecuador and Brazil. 
+The model comparison clearly favored the interaction model assuming that the the difference between speakers varied across settings (WAIC = `r comp_talk%>%filter(model == "bm3_2")%>%pull(waic)`, se = `r comp_talk%>%filter(model == "bm3_2")%>%pull(se_waic)`, weight > 0.99; model assuming no interaction: WAIC = `r comp_talk%>%filter(model == "bm3_1")%>%pull(waic)`, se = `r comp_talk%>%filter(model == "bm3_1")%>%pull(se_waic)`, weight < 0.01; dWAIC = `r comp_talk%>%filter(model == "bm3_1")%>%pull(elpd_diff)`, SE(dWAIC) = `r comp_talk%>%filter(model == "bm3_1")%>%pull(se_diff)`). Figure \@ref(fig:fig1)C shows that even though mothers talked the most in all settings, this effect was much more pronounced in Japan, Germany and Argentina compared to Ecuador and Brazil. 
 
 ## How many gestures are being used?
 
@@ -485,7 +497,7 @@ The model comparison clearly favored the interaction model assuming that the the
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm9_1 <- brm(count ~ speaker + (1|family),
 #            data = ges_data,
@@ -494,7 +506,7 @@ The model comparison clearly favored the interaction model assuming that the the
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm9_2 <- brm(count ~ speaker + (1|family) + (1|country),
 #            data = ges_data,
@@ -503,7 +515,7 @@ The model comparison clearly favored the interaction model assuming that the the
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm9_3 <- brm(count ~ speaker + (1|family) + (speaker|country),
 #            data = ges_data,
@@ -512,7 +524,7 @@ The model comparison clearly favored the interaction model assuming that the the
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # comp_ges <- left_join(
 #   loo_compare(bm9_0, bm9_1, bm9_2, bm9_3, criterion = "waic")%>%as_tibble(rownames = "model"),
@@ -554,14 +566,14 @@ fix_bm9_3 <- fixef(bm9_3)%>%as_tibble(rownames = "term")%>%mutate_if(is.numeric,
 # ggsave(fig1, file = "../visuals/fig1.png", height = 6, width = 12, scale = 1.2)
 ```
 
-To conclude the first set of analysis, we looked at variation in gesture production. Iconic gestures were produced at a much lower rate (only ~15% of the 1484 gestures were iconic gestures), resulting in many empty cells for combinations of individual and cultural setting. This made it difficult to analyze points and iconic gestures separately and we instead decided to combine them. Thus, the dependent variable was the number of gestures produced by each individual. We modeled this distribution as a zero-inflated poisson distribution to account for the fact that some individuals did not produce any gestures.
+To conclude the first set of analysis, we looked at variation in gesture production. Iconic gestures were produced at a much lower rate (15%) compared to pointing gestures (85%). Thus, many individuals from different cultural settings did not produce any iconic gestures. This made it difficult to analyze points and iconic gestures separately and we instead decided to combine them. Thus, the dependent variable was the number of gestures produced by each individual. We modeled this distribution as a zero-inflated poisson distribution to account for the fact that some individuals did not produce any gestures.
 
 The null model only included an intercept and a random effect of family (`gestures ~ 1 + (1|family)`). There were three alternative models: the first included producer (child, mother, father) as a fixed effect (`gestures ~ producer + (1|family)`), the second model added to this a random effect for setting (`gestures ~ producer + (1|setting) + (1|family)`) and the third model included an additional random slope for interlocutors within setting to model the interaction (`gestures ~ producer + (producer|setting) + (1|family)`).
 
-The model comparison clearly favored the model assuming that the number of gestures produced varied between individuals within cultural settings (interaction model; WAIC = `r comp_ges%>%filter(model == "bm9_3")%>%pull(waic)`, se = `r comp_ges%>%filter(model == "bm9_3")%>%pull(se_waic)`, weight = `r comp_ges%>%filter(model == "bm9_3")%>%pull(weight)`; second best model (without interaction): WAIC = `r comp_ges%>%filter(model == "bm9_2")%>%pull(waic)`, se = `r comp_ges%>%filter(model == "bm9_2")%>%pull(se_waic)`, weight = `r comp_ges%>%filter(model == "bm9_2")%>%pull(weight)`). Overall, there were slightly fewer gestures in Ecuador and Brazil. Looking at the different individuals, we saw that -- across settings -- children produced the most gestures, followed by mothers and then fathers. This pattern was less pronounced in Brazil and Argentina and notably reversed in Ecuador, where children produced hardly any gestures (see Figure \@ref(fig:fig1)D).
+The model comparison clearly favored the model assuming that the number of gestures produced varied between individuals within cultural settings (interaction model; WAIC = `r comp_ges%>%filter(model == "bm9_3")%>%pull(waic)`, se = `r comp_ges%>%filter(model == "bm9_3")%>%pull(se_waic)`, weight > 0.99; second best model (without interaction): WAIC = `r comp_ges%>%filter(model == "bm9_2")%>%pull(waic)`, se = `r comp_ges%>%filter(model == "bm9_2")%>%pull(se_waic)`, weight < 0.01; dWAIC = `r comp_ges%>%filter(model == "bm9_2")%>%pull(elpd_diff)`, SE(dWAIC) = `r comp_ges%>%filter(model == "bm9_2")%>%pull(se_diff)`). Overall, there were slightly fewer gestures in Ecuador and Brazil. Looking at the different individuals, we saw that -- across settings -- children produced the most gestures, followed by mothers and then fathers. This pattern was less pronounced in Brazil and Argentina and notably reversed in Ecuador, where children produced hardly any gestures (see Figure \@ref(fig:fig1)D).
 
 
-```{r fig1, out.width="100%", fig.cap = "A: Silence across cultural settings. B: Talk directed at the different individuals. C: Time spent talking by the different individuals. D: Number of gestures (points and iconic gestures combined) produced by each individual. In B-D: color denotes the individual. Distributions show the predicted values based on the respective model with solid points and error bars showing the mean with 66\\% and 95\\% CrI. Light points show the aggregated data for each family and -- whenever applicable -- individual."}
+```{r fig1, out.width="100%", fig.cap = "A: Non-talk across cultural settings. B: Talk directed at the different individuals. C: Time spent talking by the different individuals. D: Number of gestures (points and iconic gestures combined) produced by each individual. In B-D: color denotes the individual. Distributions show the predicted values based on the respective model with solid points and error bars showing the mean with 66\\% and 95\\% CrI. Light points show the aggregated data for each family and -- whenever applicable -- individual."}
 knitr::include_graphics("../visuals/fig1.png")
 ```
 
@@ -595,7 +607,7 @@ knitr::include_graphics("../visuals/fig1.png")
 #       control = list(adapt_delta = 0.95),
 #       iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #       backend = "cmdstanr")%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm4_1 <- brm(data = conv_data,
 #       family = categorical(),
@@ -603,7 +615,7 @@ knitr::include_graphics("../visuals/fig1.png")
 #       control = list(adapt_delta = 0.95),
 #       iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #       backend = "cmdstanr")%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # comp_conv <- left_join(
 #   loo_compare(bm4_0, bm4_1, criterion = "waic")%>%as_tibble(rownames = "model"),
@@ -622,7 +634,7 @@ fix_bm4_1 <- fixef(bm4_1)%>%as_tibble(rownames = "term")%>%mutate_if(is.numeric,
 
 To address the question of who talks to whom we categorized the conversational partners of each utterance as either being mother and father, child and mother or child and father. We then used a categorical model to predict the proportion with which each of these categories occurred. The null model only included an intercept and a random effect of family (`partners ~ 1 + (1|family)`) while the alternative model assumed that these proportions differ across settings (`partners ~ 1 + (1|setting) + (1|family)`).
 
-The model comparison yielded no clear difference between models, suggesting no substantial differences in the proportion of conversational partners across settings (null model: WAIC = `r comp_conv%>%filter(model == "bm4_0")%>%pull(waic)`, se = `r comp_conv%>%filter(model == "bm4_0")%>%pull(se_waic)`, weight = `r comp_conv%>%filter(model == "bm4_0")%>%pull(weight)`; alternative model: WAIC = `r comp_conv%>%filter(model == "bm4_1")%>%pull(waic)`, se = `r comp_conv%>%filter(model == "bm4_1")%>%pull(se_waic)`, weight = `r comp_conv%>%filter(model == "bm4_1")%>%pull(weight)`). Compared to an equal split (proportion of 0.33 for each category), conversations between mother and child were slightly more frequent and conversations between child and father less frequent except for Brazil where conversations between mother and father were less likely (see Figure \@ref(fig:fig2)A).
+The model comparison yielded no clear difference between models, suggesting no substantial differences in the proportion of conversational partners across settings (alternative model: WAIC = `r comp_conv%>%filter(model == "bm4_1")%>%pull(waic)`, se = `r comp_conv%>%filter(model == "bm4_1")%>%pull(se_waic)`, weight = `r comp_conv%>%filter(model == "bm4_1")%>%pull(weight)`; null model: WAIC = `r comp_conv%>%filter(model == "bm4_0")%>%pull(waic)`, se = `r comp_conv%>%filter(model == "bm4_0")%>%pull(se_waic)`, weight = `r comp_conv%>%filter(model == "bm4_0")%>%pull(weight)`; dWAIC = `r comp_conv%>%filter(model == "bm4_0")%>%pull(elpd_diff)`, SE(dWAIC) = `r comp_conv%>%filter(model == "bm4_0")%>%pull(se_diff)`). Compared to an equal split (proportion of 0.33 for each category), conversations between mother and child were slightly more frequent and conversations between child and father less frequent except for Brazil where conversations between mother and father were less likely (see Figure \@ref(fig:fig2)A).
 
 ```{r}
 # post_conv <-conv_data%>%
@@ -631,8 +643,8 @@ The model comparison yielded no clear difference between models, suggesting no s
 # 
 # p_partner <- ggplot(post_conv, aes(x = .epred, y = country, fill = .category))+
 #   geom_vline(xintercept = 1/3, lty = 3, alpha = .5)+
-#   stat_halfeye(alpha = .75, .width = c(0.66, 0.95))+
 #   geom_point(data = conv_prop_data, aes(x = prop_conv, y = country, col = conv),fill = NA,pch = 1,alpha = .5)+
+#   stat_halfeye(alpha = .75, .width = c(0.66, 0.95))+
 #   scale_color_ptol(name = "Interlocutors")+
 #   scale_fill_ptol(name = "Interlocutors")+
 #   labs(y = "",x = "Proportion of utterances")+
@@ -641,7 +653,7 @@ The model comparison yielded no clear difference between models, suggesting no s
 #   theme(legend.position = c(0.85,0.8), legend.background = element_blank())
 ```
 
-## Who uses which speech acts?
+## Who uses which functional elements?
 
 ```{r}
 # speechact_data <- data%>%
@@ -666,7 +678,7 @@ The model comparison yielded no clear difference between models, suggesting no s
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm8_1 <- brm(speech_act ~ speaker + (1|family),
 #            data = speechact_data,
@@ -675,7 +687,7 @@ The model comparison yielded no clear difference between models, suggesting no s
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 #   
 # bm8_2 <- brm(speech_act ~ speaker + (1|family) + (1 | country),
 #            data = speechact_data,
@@ -684,7 +696,7 @@ The model comparison yielded no clear difference between models, suggesting no s
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm8_3 <- brm(speech_act ~  speaker + (1|family) + (speaker | country),
 #            data = speechact_data,
@@ -693,7 +705,7 @@ The model comparison yielded no clear difference between models, suggesting no s
 #            iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #            backend = "cmdstanr"
 #            )%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # 
 # comp_speechact <- left_join(
@@ -730,9 +742,9 @@ fix_bm8_3 <- fixef(bm8_3)%>%as_tibble(rownames = "term")%>%mutate_if(is.numeric,
 
 ```
 
-As the next step, we analyzed how the different speakers used speech acts -- assertions, imperatives, and questions. That is, we predicted the proportion with which each speech act occurred using a categorical model. We investigated whether the types of speech acts used varied with speakers as well as cultural setting. The null model only included an intercept and a random effect of family (`speech_act ~ 1 + (1|family)`). There were three alternative models: the first included speaker as an additional fixed effect (`speech_act ~ speaker + (1|family)`), the second model added to this a random effect for setting (`speech_act ~ speaker + (1|setting) + (1|family)`) and the third model included and additional random slope for speaker within setting to model the interaction between speaker and setting (`speech_act ~ speaker + (speaker|setting) + (1|family)`).
+As the next step, we analyzed how the different speakers used different functional elements -- assertions, imperatives, and questions. That is, we predicted the proportion with which each functional element occurred using a categorical model. We investigated whether the types of functional elements used varied with speakers as well as cultural settings. The null model only included an intercept and a random effect of family (`function ~ 1 + (1|family)`). There were three alternative models: the first included speaker as an additional fixed effect (`function ~ speaker + (1|family)`), the second model added to this a random effect for setting (`function ~ speaker + (1|setting) + (1|family)`) and the third model included and additional random slope for speaker within setting to model the interaction between speaker and setting (`function ~ speaker + (speaker|setting) + (1|family)`).
 
-The model comparison clearly favored the interaction model assuming that the type of speech act varied across speakers within cultural setting (WAIC = `r comp_speechact%>%filter(model == "bm8_3")%>%pull(waic)`, se = `r comp_speechact%>%filter(model == "bm8_3")%>%pull(se_waic)`, weight = `r comp_speechact%>%filter(model == "bm8_3")%>%pull(weight)`; second best model (without interaction): WAIC = `r comp_speechact%>%filter(model == "bm8_2")%>%pull(waic)`, se = `r comp_speechact%>%filter(model == "bm8_2")%>%pull(se_waic)`, weight = `r comp_speechact%>%filter(model == "bm8_2")%>%pull(weight)`). The general pattern was that assertions were the most frequent type of speech act, followed by questions and imperatives. This ordering was much more pronounced in children in that they hardly used questions or imperatives. Variation across settings was most notable in that both mothers and fathers from Brazil and Ecuador were substantially more likely to use imperatives compared to the other three settings (see Figure \@ref(fig:fig2)B).
+The model comparison clearly favored the interaction model assuming that the use of functional element varied across speakers within cultural setting (WAIC = `r comp_speechact%>%filter(model == "bm8_3")%>%pull(waic)`, se = `r comp_speechact%>%filter(model == "bm8_3")%>%pull(se_waic)`, weight > 0.99; second best model (without interaction): WAIC = `r comp_speechact%>%filter(model == "bm8_2")%>%pull(waic)`, se = `r comp_speechact%>%filter(model == "bm8_2")%>%pull(se_waic)`, weight < 0.01; dWAIC = `r comp_speechact%>%filter(model == "bm8_2")%>%pull(elpd_diff)`, SE(dWAIC) = `r comp_speechact%>%filter(model == "bm8_2")%>%pull(se_diff)`). The general pattern was that assertions were the most frequent type of functional element, followed by questions and imperatives. This ordering was much more pronounced in children in that they hardly used questions or imperatives. Variation across settings was most notable in that both mothers and fathers from Brazil and Ecuador were substantially more likely to use imperatives compared to the other three settings (see Figure \@ref(fig:fig2)B).
 
 ```{r}
 # fig2 <- ggarrange(p_partner,p_speechact,
@@ -744,7 +756,7 @@ The model comparison clearly favored the interaction model assuming that the typ
 #ggsave(fig2, file = "../visuals/fig2.png", height = 4, width = 12, scale = 1.2)
 ```
 
-```{r fig2, out.width="100%", fig.cap = "A: Proportion of utterances that were exchanged by a pair of interlocutors. Color shows the interlocutors involved in the utterance regardless of direction (i.e., identity of speaker and listener). B:Proportion of utterances that belonged to a certain class of speech acts. Facets show different speakers, color denotes the type of speech act. Distributions show the predicted values based on the respective model with solid points and error bars showing the mean with 66\\% and 95\\% CrI. Light points show the aggregated data for each family."}
+```{r fig2, out.width="100%", fig.cap = "A: Proportion of utterances that were exchanged by a pair of interlocutors. Color shows the interlocutors involved in the utterance regardless of direction (i.e., identity of speaker and listener). B:Proportion of utterances that belonged to a certain class of functional element. Facets show different speakers, color denotes the functional element. Distributions show the predicted values based on the respective model with solid points and error bars showing the mean with 66\\% and 95\\% CrI. Light points show the aggregated data for each family."}
 knitr::include_graphics("../visuals/fig2.png")
 ```
 
@@ -768,7 +780,7 @@ peop_mean_data <- peop_data%>%
 #       control = list(adapt_delta = 0.95),
 #       iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #       backend = "cmdstanr")%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm5_1 <- brm(data = peop_data, 
 #       family = binomial(), 
@@ -776,7 +788,7 @@ peop_mean_data <- peop_data%>%
 #       control = list(adapt_delta = 0.95),
 #       iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #       backend = "cmdstanr")%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # 
 # comp_peop <- left_join(
@@ -801,8 +813,8 @@ fix_bm5_1 <- fixef(bm5_1)%>%as_tibble(rownames = "term")%>%mutate_if(is.numeric,
 #   add_epred_draws(bm5_1, re_formula = ~(1|country))
 # 
 # p_peop <- ggplot(post_peop, aes(x = .epred+1, y = country))+
-#   stat_halfeye(alpha = .75, .width = c(0.66, 0.95))+
 #   geom_point(data = peop_mean_data, aes(x = mean_peop, y = country),pch = 1,alpha = .5)+
+#   stat_halfeye(alpha = .75, .width = c(0.66, 0.95))+
 #   labs(x = "Number of people involved in a theme", y = "")+
 #   xlim(1,3)+
 #   theme_bw()
@@ -810,9 +822,9 @@ fix_bm5_1 <- fixef(bm5_1)%>%as_tibble(rownames = "term")%>%mutate_if(is.numeric,
 
 ```
 
-Next, we turned to themes as the focus of analysis. As a first step, we asked how many different speakers were involved in a theme. To be involved in a theme, an individual had to produce at least one utterance. Please note that it was possible for themes to have only one speaker. In fact, this was the case for `r peop_data%>%group_by(speakers)%>%summarise(n=n())%>%ungroup()%>%mutate(prop = n/sum(n))%>%mutate_if(is.numeric,round, 2)%>%filter(speakers == 1)%>%pull(prop)*100`%% of all utterances. These themes were mostly single utterances that occurred when someone made an unrelated comment or asked a question but did not receive an answer. We counted the number of speakers involved in each theme (1, 2, or 3) and modeled the resulting distribution using a binomial model. Note that this approach does not take into account the length of each theme. We compared a null model including only an overall intercept (`no_speakers ~ 1`) to a model including cultural setting (`no_speakers ~ 1 + (1|setting)`).
+Next, we turned to themes as the focus of analysis. As a first step, we asked how many different speakers were involved in a theme. To be involved in a theme, an individual had to produce at least one utterance. Please note that it was possible for themes to have only one speaker. In fact, this was the case for `r peop_data%>%group_by(speakers)%>%summarise(n=n())%>%ungroup()%>%mutate(prop = n/sum(n))%>%mutate_if(is.numeric,round, 2)%>%filter(speakers == 1)%>%pull(prop)*100`% of all utterances. These themes were mostly single utterances that occurred when someone made an unrelated comment or asked a question but did not receive an answer. We counted the number of speakers involved in each theme (1, 2, or 3) and modeled the resulting distribution using a binomial model. Note that this approach does not take into account the length of each theme. We compared a null model including only an overall intercept (`no_speakers ~ 1`) to a model including cultural setting (`no_speakers ~ 1 + (1|setting)`).
 
-The model comparison favored the model including cultural setting (WAIC = `r comp_peop%>%filter(model == "bm5_1")%>%pull(waic)`, se = `r comp_peop%>%filter(model == "bm5_1")%>%pull(se_waic)`, weight = `r comp_peop%>%filter(model == "bm5_1")%>%pull(weight)`) over the null model (WAIC = `r comp_peop%>%filter(model == "bm5_0")%>%pull(waic)`, se = `r comp_peop%>%filter(model == "bm5_0")%>%pull(se_waic)`, weight = `r comp_peop%>%filter(model == "bm5_0")%>%pull(weight)`). Figure \@ref(fig:fig3)A shows that the number of speakers involved in a theme was relatively similar across cultural settings, with Brazil being the notable exception in having, on average, more speakers per theme.
+The model comparison favored the model including cultural setting (WAIC = `r comp_peop%>%filter(model == "bm5_1")%>%pull(waic)`, se = `r comp_peop%>%filter(model == "bm5_1")%>%pull(se_waic)`, weight = `r comp_peop%>%filter(model == "bm5_1")%>%pull(weight)`) over the null model (WAIC = `r comp_peop%>%filter(model == "bm5_0")%>%pull(waic)`, se = `r comp_peop%>%filter(model == "bm5_0")%>%pull(se_waic)`, weight = `r comp_peop%>%filter(model == "bm5_0")%>%pull(weight)`; dWAIC = `r comp_peop%>%filter(model == "bm5_0")%>%pull(elpd_diff)`, SE(dWAIC) = `r comp_peop%>%filter(model == "bm5_0")%>%pull(se_diff)`). Figure \@ref(fig:fig3)A shows that the number of speakers involved in a theme was relatively similar across cultural settings, with Brazil being the notable exception in having, on average, more speakers per theme.
 
 ## Who initiates themes?
 
@@ -836,7 +848,7 @@ The model comparison favored the model including cultural setting (WAIC = `r com
 #       control = list(adapt_delta = 0.95),
 #       iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #       backend = "cmdstanr")%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm6_1 <- brm(data = init_data, 
 #       family = categorical(),
@@ -844,7 +856,7 @@ The model comparison favored the model including cultural setting (WAIC = `r com
 #       control = list(adapt_delta = 0.95),
 #       iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #       backend = "cmdstanr")%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # 
 # comp_init <- left_join(
@@ -899,7 +911,7 @@ props_init <- ranef(bm6_1)$country%>%as_tibble(rownames = "term")%>%
 
 In the following analysis, we asked whether there are differences among speakers and cultural settings in who initiated a theme. For each theme, we only selected the first utterance and used a categorical model to predict the probability with which each individual was the speaker of that utterance and thus the initiator of the theme. Once again, we compared a null model including only an overall intercept (`initiator ~ 1`) to a model including cultural setting (`initiator ~ 1 + (1|setting)`).
 
-The model comparison favored the model including cultural setting (WAIC = `r comp_init%>%filter(model == "bm6_1")%>%pull(waic)`, se = `r comp_init%>%filter(model == "bm6_1")%>%pull(se_waic)`, weight = `r comp_init%>%filter(model == "bm6_1")%>%pull(weight)`) over the null model (WAIC = `r comp_init%>%filter(model == "bm6_0")%>%pull(waic)`, se = `r comp_init%>%filter(model == "bm6_0")%>%pull(se_waic)`, weight = `r comp_init%>%filter(model == "bm6_0")%>%pull(weight)`). However, the difference between models was rather small, suggesting that there were no pronounced differences between cultural settings. Overall, there were no huge differences between the three individuals in terms of the probability of being the initiator of a theme (range: `r min(props_init$prop)` to `r max(props_init$prop)`). Compared to an equal split, mothers were slightly more likely to initiate themes and fathers less likely. This relative pattern held for all cultural settings, except Brazil, where the child was the most likely initiator of a theme (see Figure \@ref(fig:fig3)B).
+The model comparison favored the model including cultural setting (WAIC = `r comp_init%>%filter(model == "bm6_1")%>%pull(waic)`, se = `r comp_init%>%filter(model == "bm6_1")%>%pull(se_waic)`, weight = `r comp_init%>%filter(model == "bm6_1")%>%pull(weight)`) over the null model (WAIC = `r comp_init%>%filter(model == "bm6_0")%>%pull(waic)`, se = `r comp_init%>%filter(model == "bm6_0")%>%pull(se_waic)`, weight = `r comp_init%>%filter(model == "bm6_0")%>%pull(weight)`). However, the difference between models was rather small, suggesting that there were no pronounced differences between cultural settings (dWAIC = `r comp_init%>%filter(model == "bm6_0")%>%pull(elpd_diff)`, SE(dWAIC) = `r comp_init%>%filter(model == "bm6_0")%>%pull(se_diff)`). Overall, there were no huge differences between the three individuals in terms of the probability of being the initiator of a theme (range: `r min(props_init$prop)` to `r max(props_init$prop)`). Compared to an equal split, mothers were slightly more likely to initiate themes and fathers less likely. This relative pattern held for all cultural settings, except Brazil, where the child was the most likely initiator of a theme (see Figure \@ref(fig:fig3)B).
 
 ## How long do themes last?
 
@@ -935,7 +947,7 @@ The model comparison favored the model including cultural setting (WAIC = `r com
 #       control = list(adapt_delta = 0.95),
 #       iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #       backend = "cmdstanr")%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm7_1 <- brm(max_round ~ conv + (1|family),
 #            data = length_data,
@@ -943,7 +955,7 @@ The model comparison favored the model including cultural setting (WAIC = `r com
 #       control = list(adapt_delta = 0.95),
 #       iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #       backend = "cmdstanr")%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm7_2 <- brm(max_round ~ conv + (1|family) + (1|country),
 #            data = length_data,
@@ -951,7 +963,7 @@ The model comparison favored the model including cultural setting (WAIC = `r com
 #       control = list(adapt_delta = 0.95),
 #       iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #       backend = "cmdstanr")%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # bm7_3 <- brm(max_round ~ conv + (1|family) + (conv|country),
 #            data = length_data,
@@ -959,7 +971,7 @@ The model comparison favored the model including cultural setting (WAIC = `r com
 #       control = list(adapt_delta = 0.95),
 #       iter = 6000, warmup = 2000, cores = 4, chains = 4,
 #       backend = "cmdstanr")%>%
-#   add_criterion(., c("waic","loo"), moment_match = T)
+#   add_criterion(., c("waic","loo"))
 # 
 # comp_length <- left_join(
 #   loo_compare(bm7_0, bm7_1,bm7_2, bm7_3, criterion = "waic")%>%as_tibble(rownames = "model"),
@@ -992,11 +1004,11 @@ fix_bm7_3 <- fixef(bm7_3)%>%as_tibble(rownames = "term")%>%mutate_if(is.numeric,
 #   theme(legend.position = c(0.8,0.8), legend.background = element_blank())
 ```
 
-We finished the analysis of themes by asking about variation in how long themes lasted (i.e., how many rounds there were in a theme). For each theme, we noted its length (i.e., the maximum round) and the main interlocutors. For that, we counted how many utterances were exchanged between all possible pairs in each theme and classified each theme as being mainly a conversation between those interlocutors who exchanged the most utterances. As a consequence, we excluded all themes that only had a single round and only involved a single speaker. The dependent variable (length of the theme) was heavily right-skewed and close to zero and we, therefore, used a log-normal distribution to model it.
+We finished the analysis of themes by asking about variation in how long themes lasted (i.e., how many utterances there were in a theme). For each theme, we noted its length (i.e., the maximum utterance) and the main interlocutors. For that, we counted how many utterances were exchanged between all possible pairs in each theme and classified each theme as being mainly a conversation between those interlocutors who exchanged the most utterances. As a consequence, we excluded all themes that only had a single utterance and only involved a single speaker. The dependent variable (length of the theme) was heavily right-skewed and close to zero and we, therefore, used a log-normal distribution to model it.
 
-The null model only included an intercept and a random effect of family (`theme_length ~ 1 + (1|family)`). There were three alternative models: the first included interlocutors as a fixed effect (`theme_length ~ interlocutors + (1|family)`), the second model added to this a random effect for setting (`theme_length ~ interlocutors + (1|setting) + (1|family)`) and the third model included and additional random slope for interlocutors within setting to model the interaction between interlocutors and setting (`theme_length ~ interlocutors + (interlocutors|setting) + (1|family)`).
+The null model only included an intercept and a random effect of family (`theme_length ~ 1 + (1|family)`). There were three alternative models: the first included interlocutors as a fixed effect (`theme_length ~ interlocutors + (1|family)`), the second model added to this a random effect for setting (`theme_length ~ interlocutors + (1|setting) + (1|family)`) and the third model included an additional random slope for interlocutors within setting to model the interaction between interlocutors and setting (`theme_length ~ interlocutors + (interlocutors|setting) + (1|family)`).
 
-The model comparison clearly favored the interaction model assuming that the difference in length of themes for each pair of interlocutors varied across cultural settings (WAIC = `r comp_length%>%filter(model == "bm7_3")%>%pull(waic)`, se = `r comp_length%>%filter(model == "bm7_3")%>%pull(se_waic)`, weight = `r comp_length%>%filter(model == "bm7_3")%>%pull(weight)`; second best model (without interaction): WAIC = `r comp_length%>%filter(model == "bm7_2")%>%pull(waic)`, se = `r comp_length%>%filter(model == "bm7_2")%>%pull(se_waic)`, weight = `r comp_length%>%filter(model == "bm7_2")%>%pull(weight)`). The average predicted length of a theme across interlocutors and settings was `r fix_bm7_3%>%pull(Estimate)` rounds [95%CrI = `r fix_bm7_3%>%pull(Q2.5)` - `r fix_bm7_3%>%pull(Q97.5)`]. Figure \@ref(fig:fig3)C indicates a variable pattern across cultural settings. In Japan, themes were approximately equally long for all pairs of interlocutors. In the other settings, conversations between mother and father were shorter compared to conversations between one of the parents and the child. This pattern was less pronounced in Ecuador compared to Germany, Brazil and Argentina. Overall, themes lasted slightly longer in Brazil compared to the other settings.
+The model comparison favored the interaction model assuming that the difference in length of themes for each pair of interlocutors varied across cultural settings (WAIC = `r comp_length%>%filter(model == "bm7_3")%>%pull(waic)`, se = `r comp_length%>%filter(model == "bm7_3")%>%pull(se_waic)`, weight > 0.99; second best model (without interaction): WAIC = `r comp_length%>%filter(model == "bm7_2")%>%pull(waic)`, se = `r comp_length%>%filter(model == "bm7_2")%>%pull(se_waic)`, weight < 0.01; dWAIC = `r comp_length%>%filter(model == "bm7_2")%>%pull(elpd_diff)`, SE(dWAIC) = `r comp_length%>%filter(model == "bm7_2")%>%pull(se_diff)`). The average predicted length of a theme across interlocutors and settings was `r fix_bm7_3%>%pull(Estimate)` utterances [95%CrI = `r fix_bm7_3%>%pull(Q2.5)` - `r fix_bm7_3%>%pull(Q97.5)`]. Figure \@ref(fig:fig3)C indicates a variable pattern across cultural settings. In Japan, themes were approximately equally long for all pairs of interlocutors. In the other settings, conversations between mother and father were shorter compared to conversations between one of the parents and the child. This pattern was less pronounced in Ecuador compared to Germany, Brazil and Argentina. Overall, themes lasted slightly longer in Brazil compared to the other settings.
 
 
 ```{r}
@@ -1008,7 +1020,7 @@ The model comparison clearly favored the interaction model assuming that the dif
 # ggsave(fig3, file = "../visuals/fig3.png", height = 4, width = 12, scale = 1.2)
 ```
 
-```{r fig3, out.width="100%", fig.cap = "A: Average number of people involved in a theme. B: Proportion of themes as a function of who initiated them. Color shows the initiator. C: Number of rounds per theme depending on the interlocutors involved. Color shows the interlocutors who exchanged the most utterances within a given theme. Distributions show the predicted values based on the respective model with solid points and error bars showing the mean with 66\\% and 95\\% CrI. Light points show the aggregated data for each family."}
+```{r fig3, out.width="100%", fig.cap = "A: Average number of people involved in a theme. B: Proportion of themes as a function of who initiated them. Color shows the initiator. C: Number of utterances per theme depending on the interlocutors involved. Color shows the interlocutors who exchanged the most utterances within a given theme. Distributions show the predicted values based on the respective model with solid points and error bars showing the mean with 66\\% and 95\\% CrI. Light points show the aggregated data for each family."}
 knitr::include_graphics("../visuals/fig3.png")
 ```
 
@@ -1044,7 +1056,7 @@ knitr::include_graphics("../visuals/fig3.png")
 #   mutate(`Father speaker` = father/(father+mother+child),
 #          `Mother speaker` = mother/(father+mother+child),
 #          `Child speaker` = child/(father+mother+child),
-#          Silence = silence)%>%
+#          `Non-talk` = silence)%>%
 #   ungroup()%>%
 #   select(-c(father,mother,child,silence))
 # 
@@ -1061,7 +1073,7 @@ knitr::include_graphics("../visuals/fig3.png")
 # 
 # cluster <- cluster1 %>%left_join(cluster2)%>%left_join(cluster3)
 # 
-# cluster_data <- cluster%>%mutate_if(is.numeric, scale)%>% remove_rownames %>% column_to_rownames(var="key")%>%filter(!is.na(Silence))
+# cluster_data <- cluster%>%mutate_if(is.numeric, scale)%>% remove_rownames %>% column_to_rownames(var="key")%>%filter(!is.na(`Non-talk`))
 # 
 # fviz_nbclust(cluster_data, kmeans, method = "wss")
 # 
@@ -1092,7 +1104,7 @@ knitr::include_graphics("../visuals/fig3.png")
 ```{r}
 # profil <- as_tibble(final$centers, rownames = "Cluster")%>%
 #   pivot_longer( cols = c(2:12), names_to = "dimension", values_to = "value") %>%
-#   mutate(dimension = factor(dimension, levels = rev(c("Silence","Father speaker","Mother speaker","Child speaker","Speakers per theme", "Rounds","Themes","Questions","Assertions","Imperatives","Gestures"))),
+#   mutate(dimension = factor(dimension, levels = rev(c("Non-talk","Father speaker","Mother speaker","Child speaker","Speakers per theme", "Rounds","Themes","Questions","Assertions","Imperatives","Gestures"))),
 #          Cluster = factor(Cluster))%>%
 #   arrange(dimension)%>%
 #   ggplot(., aes(x = value, y = dimension, col = Cluster))+
@@ -1119,15 +1131,15 @@ knitr::include_graphics("../visuals/fig3.png")
 
 ```
 
-In this final analysis, we took a more holistic look at the data and tried to identify patterns across the communicative dimensions analyzed above. That is, we asked if there were clusters within our sample that represent different communicative profiles. This allowed us to see a) if families clustered based on cultural settings and b) how the different cultural settings clustered with each other. To construct the data set for this analysis, we computed the following dimensions for each family: the amount of Silence, the proportion of utterances coming from each individual (`Father speaker`, `Mother speaker`, and `Child speaker`), the proportion of `Questions`, `Assertions`, and `Imperatives`, the number of `Gestures`, the number of `Themes`, the average number of `Rounds` per theme, and the average number of `Speakers per theme`. Please note that more granular dimensions (e.g., gestures or speech act types separate for each individual) would have been possible. However, because this would have meant that each dimension would have had to be estimated based on less data (resulting in a more noisy estimate), we decided to use a more coarse approach.
+In this final analysis, we took a more holistic look at the data and tried to identify patterns across the communicative dimensions analyzed above. That is, we asked if there were clusters within our sample that represent different communicative profiles. This allowed us to see a) if families clustered based on cultural settings and b) how the different cultural settings clustered with each other. To construct the data set for this analysis, we computed the following dimensions for each family: the amount of `Non-talk`, the proportion of utterances coming from each individual (`Father speaker`, `Mother speaker`, and `Child speaker`), the proportion of `Questions`, `Assertions`, and `Imperatives`, the number of `Gestures`, the number of `Themes`, the average number of `Utterances` per theme, and the average number of `Speakers per theme`. Please note that more granular dimensions (e.g., gestures or functional elements separate for each individual) would have been possible. However, because this would have meant that each dimension would have had to be estimated based on less data (resulting in a more noisy estimate), we decided to use a more coarse approach.
 
 We performed *k*-means clustering on the data using the function `kmeans` from the `stats` package which is a native component of `R`. This analysis partitions the data into *k* clusters so that the sum of squares from points to the assigned cluster centers -- in the multidimensional space that is defined by the different dimensions -- is minimized. We used the default *Hartigan-Wong* algorithm to find these cluster centers [@hartigan1979algorithm]. To determine the number of clusters, we used the *silhouette* and *elbow* methods via the function `fviz_nbclust` from the `factoextra` package [@factoextract]. Both suggested two clusters as the optimal solution.
 
 Figure \@ref(fig:fig4)A visualizes the clustering of families based on this analysis. The first cluster (blue), included mainly families from Argentina, Germany and Japan. Within the cluster, there was no further clustering of families by cultural setting. The second cluster (gold), mainly comprised families from Ecuador and Brazil. Within that cluster, families further tended to cluster by cultural setting, with families from Brazil being more similar to each other compared to families from Ecuador.
 
-In comparison to the first cluster, the second cluster (mainly Ecuador and Brazil) was characterized by overall less talk (more silence), a higher proportion of child- compared to parental-talk, and fewer gestures. Furthermore, there were fewer themes, but themes had more speakers and lasted longer. Finally, there was a higher proportion of imperatives and thus fewer assertions and questions (see Figure \@ref(fig:fig4)B).
+In comparison to the first cluster, the second cluster (mainly Ecuador and Brazil) was characterized by overall less talk, a higher proportion of child- compared to parental-talk, and fewer gestures. Furthermore, there were fewer themes, but themes had more speakers and lasted longer. Finally, there was a higher proportion of imperatives and thus fewer assertions and questions (see Figure \@ref(fig:fig4)B).
 
-Figure \@ref(fig:fig4)C shows the correlations between the different dimensions across clusters. Besides some expected patterns (e.g., negative correlation between proportion of talk from the different individuals) there were some notable associations: more silence was associated with a higher proportion of imperatives, themes had more rounds the more speakers were involved, and a larger number of questions was associated with more themes.
+Figure \@ref(fig:fig4)C shows the correlations between the different dimensions across clusters. Besides some expected patterns (e.g., negative correlation between proportion of talk from the different individuals) there were some notable associations: more non-talk was associated with a higher proportion of imperatives, themes had more utterances the more speakers were involved, and a larger number of questions was associated with more themes.
 
 ```{r}
 # fig4 <- ggarrange(clus,
@@ -1145,7 +1157,7 @@ knitr::include_graphics("../visuals/fig4.png")
 
 # Discussion
 
-We investigated parent-child communicative interactions during mealtimes in five cultural settings. Each family comprised a father, mother and one child and we analyzed 10 minutes of video recordings. We found that families from Ecuador and Brazil communicated less overall compared to families from Argentina and Germany, with Japan falling in the middle. Across settings, there was a common pattern in how talk was distributed across family members: mothers talked the most and children were addressed most frequently. Assertions were the most common type of speech act for all speakers in all settings, followed by questions and imperatives. However, mothers and fathers form Brazil and Ecuador were more likely to use imperatives, mirroring the findings from @koester2022parental that parents used a higher number of prompts towards their children in these contexts. The number of themes -- parts of coherent utterances -- tended to be longer and involved more people in Brazil compared to the other settings. When investigating how families clustered based on their communicative interaction patterns, we found what can be described as an urban-rural split, with families from urban settings (Argentina, Germany, Japan) being more similar to each other compared to families from rural settings (Brazil, Ecuador). These systematic, quantitative comparisons provide an important step towards understanding the similarities and differences in communicative contexts in which children learn language.
+We investigated parent-child communicative interactions during mealtimes in five cultural settings. Each family comprised a father, mother and one child and we analyzed 10 minutes of video recordings. We found that families from Ecuador and Brazil spent less time talking and used fewer gestures compared to families from Argentina and Germany, with Japan falling in the middle. Across settings, there was a common pattern in how talk was distributed across family members: mothers talked the most and children were addressed most frequently. Assertions were the most common type of functional element for all speakers in all settings, followed by questions and imperatives. However, mothers and fathers form Brazil and Ecuador were more likely to use imperatives. The number of themes -- parts of coherent utterances -- tended to be longer and involved more people in Brazil compared to the other settings. When investigating how families clustered based on their communicative interaction patterns, we found what can be described as an urban-rural split, with families from urban settings (Argentina, Germany, Japan) being more similar to each other compared to families from rural settings (Brazil, Ecuador). These systematic, quantitative comparisons provide an important step towards understanding the similarities and differences in communicative contexts in which children learn language.
 
 ```{r}
 rounds <- peop_mean_data%>%
@@ -1157,19 +1169,23 @@ rounds <- peop_mean_data%>%
 ```
 
 
-Our findings echo how Barrett [-@barrett2020towards; see also @kartner2020culture] summarized much of cross-cultural research in the last two decades: *variation on a theme*. For every aspect of communicative interaction we investigated, there was a dominant pattern which described behavior in most of the cultural settings, but which was often attenuated in one or two settings. Attenuation meant that the predicted means for some of the settings were shifted while the distributions of families were largely overlapping. For example, on average, the number of people involved in a theme was around 1.8, with the highest predicted average for Brazil (~ 2.1) and the lowest for Ecuador (~1.6), yet, the minimum family average in Brazil was `r rounds%>%filter(country == "Brazil")%>%pull(min)` and the maximum for Ecuador was `r rounds%>%filter(country == "Ecuador")%>%pull(max)`. Or, mothers talked the most in all settings but the difference compared to father and child was less pronounced in Ecuador and Brazil. Thus, we may tentatively conclude that these overlaps in communicative patterns allow children to use similar learning strategies across settings -- in particular those strategies that leverage the structure of the communicative context [@rogoff2003firsthand; @casillas2020early; @shneidman2012language; @shneidman2016child].
+Our findings echo how Barrett [-@barrett2020towards; see also @kartner2020culture] summarized much of cross-cultural research in the last two decades: *variation on a theme*. For every aspect of communicative interaction we investigated, there was a dominant pattern which described behavior in most of the cultural settings, but which was often modified in one or two settings. Modification meant that the predicted means for some of the settings were shifted while the distributions of families were largely overlapping. For example, on average, the number of people involved in a theme was around 1.8, with the highest predicted average for Brazil (~ 2.1) and the lowest for Ecuador (~1.6), yet, the minimum family average in Brazil was `r rounds%>%filter(country == "Brazil")%>%pull(min)` and the maximum for Ecuador was `r rounds%>%filter(country == "Ecuador")%>%pull(max)`. Similarly, mothers talked the most in all settings but the difference compared to fathers and children was less pronounced in Ecuador and Brazil. Thus, we may tentatively conclude that these overlaps in communicative patterns allow children to use similar learning strategies across settings -- in particular those strategies that leverage the structure of the communicative context [@rogoff2003firsthand; @casillas2020early; @shneidman2012language; @shneidman2016child].
 
-The overall pattern -- or *theme* -- can be summarized as being child-centered. Across cultural settings, most talk was directed towards the child and themes had more conversational turns (i.e., number of rounds) when the child was involved. The latter finding corresponds well with the idea that children’s language learning benefits from coherent and structured interactions [@rogoff2003firsthand; @casillas2020early; @shneidman2012language; @shneidman2016child]. Mothers seemed to be the driving force behind this pattern: they spoke the most, initiated most themes and most of the themes they were involved in also included the child. This aligns with the former analyses of these videos showing that mothers teach more compared to fathers [@koester2022parental] and a recent study by @broesch2021opportunities who described mothers as the primary interaction partners for young children across five cultural settings. Fathers spoke less and were less likely to be involved in a conversation with the child. As mentioned above, this overall pattern was attenuated in some of the cultural settings and in the following we will take a closer look at this variation.
+The overall pattern -- or *theme* -- can be summarized as being child-centered. Across cultural settings, most talk was directed towards the child. This lends support to theories highlighting the role of direct input for language learning [@swingley2018quantitative; @braginsky2019consistency; @goodman2008does; @kachergis2022toward]. Despite absolute differences in how much input children received, across settings parents directed the largest proportion of talk at the child. Meals are structured by cultural norms which the child has yet to learn, resulting in more direct instruction and -- as a by-product -- more child-directed linguistic input [@ochs2006cultural; @fjellstrom2004mealtime; @blum2012dinner; @koester2022parental]. Furthermore, themes had more conversational turns (i.e., number of utterances) when the child was involved. This finding corresponds well with the idea that children’s language learning benefits from coherent and structured interactions [@rogoff2003firsthand; @casillas2020early; @shneidman2012language; @shneidman2016child]. More frequent conversational turns could originate from adults gradually adjusting and elaborating their utterances to the child’s response (or lack thereof), resulting in a form of linguistic scaffolding [@bruner1983child; @vygotsky1978mind]. Taken together, the child-centered way of communication might be the consequence of how the interactions in which talk occurs are structured.  
 
-The cluster analyses showed that families’ communicative interaction patterns co-varied with the degree of urbanization. Families from Brazil and Ecuador were more similar to each other than they were to families from Argentina, Germany and Japan. Interestingly, within the rural cluster, there seemed to be a further grouping by setting. This was not the case within the urban cluster: even though they lived in very different geographical regions and spoke very different languages. That is, families from Argentina, Germany and Japan were not more similar to families from the same setting than they were to families from the other settings. However, the urban/rural split was by no means complete in that some of the families from Brazil and Ecuador were assigned to the urban cluster and some families from Argentina were grouped in the rural cluster. A similar difference between urban and rural settings was found when analyzing parental teaching behavior for these samples but with a stronger sub-clustering of families in the urban cluster [@koester2022parental]. Taken together, these results show that variation in communicative interactions did not -- at least not primarily -- originate from the languages that were spoken, but was likely due to norms, values and beliefs prevalent in the respective cultural settings. Below we discuss in more detail how such norms, values and beliefs can explain the variation we found.
+Mothers seemed to be the driving force behind this child-centered communicative pattern: they spoke the most, initiated most themes and most of the themes they were involved in also included the child. This aligns with the former analyses of these videos showing that mothers teach more compared to fathers [@koester2022parental] and a recent study by @broesch2021opportunities who described mothers as the primary interaction partners for young children across five cultural settings. Fathers spoke less and were less likely to be involved in a conversation with the child. As mentioned above, this overall pattern was modified in some of the cultural settings and in the following we will take a closer look at this variation.
 
-Families from Brazil and Ecuador had longer periods of silences and produced fewer gestures. This mirrors results by @cristia2022systematic who synthesized 29 studies on naturalistic language input and found that infants growing up in rural settings heard less child-directed speech compared to children growing up in urban settings. For the Kichwa community in Ecuador, @sanchez2010oficio reports a norm that meals are supposed to be taken in silence. In our sample, such norms seemed to have influenced mothers’ communication the most: there was less talk by mothers in Ecuador compared to the other settings (except Brazil), while the amount of talk by fathers and children was relatively similar. However, given that all family members talked, it is worth pointing out that this norm -- at least in the present study -- mainly had an attenuating effect.
+The cluster analyses showed that families’ communicative interaction patterns co-varied with the degree of urbanization. Families from Brazil and Ecuador were more similar to each other than they were to families from Argentina, Germany and Japan. Interestingly, within the rural cluster, there seemed to be a further grouping by setting. This was not the case within the urban cluster: even though they lived in very different geographical regions and spoke very different languages. That is, families from Argentina, Germany and Japan were not more similar to families from the same setting than they were to families from the other settings. However, the urban/rural split was by no means complete in that some of the families from Brazil and Ecuador were assigned to the urban cluster and some families from Argentina were grouped in the rural cluster. A similar difference between urban and rural settings was found when analyzing parental teaching behavior for these samples but with a stronger sub-clustering of families in the urban cluster [@koester2022parental]. Taken together, these results show that variation in communicative interactions did not -- at least not primarily -- originate from the languages that were spoken, but might have been due to norms, values and beliefs prevalent in the respective cultural settings.
 
-Children communicated in very similar ways across settings: they mostly made assertions and rarely asked questions or used imperatives. Parents’ communication in the different settings were also very similar in that they mostly made assertions, asked relatively few questions and hardly used any imperatives. Notably, the rate of imperatives was substantially higher in the rural settings in Brazil and Ecuador [see also]. For rural Brazil, @koster2016cultural reported that mothers assigned tasks to their children in a more assertive way compared to mothers from urban Germany [see also @keller2004developmental for similar findings from rural Costa Rica]. Furthermore, when @koester2022parental coded teaching behavior in the same samples, they found that a higher rate of parents in Brazil and Ecuador prompted their children to do something. Finally, in a study on norm enforcement, children living in rural settings themselves used more imperatives than norm-protest when reacting to a peer's perceived norm violation [@kanngiesser2022children]. Thus, the higher rate of imperatives likely reflects cultural norms and beliefs about how children should behave and how they learn [@keller2007cultures].
+Several theoretical frameworks have focused on different parental socialization goals in urban and rural settings. For example, @keller2007cultures described that parents in urban settings prioritize children’s independence while parents in rural settings prioritize interdependence. In line with these proposals, we found that parents in urban samples used more questions, and parents in rural samples used more imperatives, likely reflecting an emphasis on autonomy and compliance, respectively. Furthermore, themes included more speakers in the rural contexts which could reflect a stronger orientation towards the group as opposed to the dyad [@rogoff2003cultural]. Not in line with this general interpretation was the finding that children spoke more in the rural context. Children in urban settings have been described as more communicative because they receive more prompts from their caregivers [@keller2007cultures]. Below we discuss in more detail how specific norms, values and beliefs may have influenced the communicative interactions.
+
+Families from Brazil and Ecuador had longer periods of non-talk and produced fewer gestures compared to families from Argentina and Germany. Japanese families fell somewhere in between. This mirrors results by @cristia2022systematic who synthesized 29 studies on naturalistic language input and found that infants growing up in rural settings heard less child-directed speech compared to children growing up in urban settings. It is also in line with the cultural norms that have been described for some of the settings. For the Kichwa community in Ecuador, @sanchez2010oficio reports a norm that meals are supposed to be taken in silence. In Japan, meals are also supposed to be silent under some circumstances [@imada2020traditional]. In Germany and Argentina, family meals are seen as a privileged occasion for communication [@danesi2018cross; @aguirre2016olla]. In our sample, such norms seemed to have influenced mothers’ communication the most: there was less talk by mothers in Ecuador compared to the other settings (except Brazil), while the amount of talk by fathers and children was relatively similar. However, given that all family members talked in all settings, it is worth pointing out that such norms -- at least in the present study -- mainly had an attenuating effect.
+
+Children communicated in very similar ways across settings: they mostly made assertions and rarely asked questions or used imperatives. Parents’ communication in the different settings were also very similar in that they mostly made assertions, asked relatively few questions and hardly used any imperatives. Notably, the rate of imperatives was substantially higher in the rural settings in Brazil and Ecuador. For rural Brazil, Köster and colleagues [-@koster2016cultural] reported that mothers assigned tasks to their children in a more assertive way compared to mothers from urban Germany [see also @keller2004developmental for similar findings from rural Costa Rica]. Furthermore, when @koester2022parental coded teaching behavior in the same samples, they found that a higher rate of parents in Brazil and Ecuador prompted their children to do something. Finally, in a study on norm enforcement, children living in rural settings themselves used more imperatives than norm-protest when reacting to a peer's perceived norm violation [@kanngiesser2022children]. Thus, the higher rate of imperatives might reflect cultural norms and beliefs about how children should behave and how they learn [@keller2007cultures].
 
 # Limitations
 
-We see the mealtime setting in which we investigated communicative interactions among family members as a strength of the current study, but acknowledge that it comes with important limitations. The constellation of mother, father and one child is probably more representative for the urban contexts of Argentina, Germany and Japan than the rural settings. Thus, it would be interesting to see if and how our observed patterns are attenuated when more people (especially more children and extended family members) take part in the meal. Based on our current findings, we would anticipate similar rates of change across cultural settings. For example, we would expect that the presence of a second child would lower the rate of talk addressed to the other child in a similar way in all cultural settings. Of course, this prediction -- as well as all our results -- can only generalize to cultural settings in which the interaction format of joint mealtimes exists. 
+We see the mealtime setting in which we investigated communicative interactions among family members as a strength of the current study, but acknowledge that it comes with important limitations. The constellation of mother, father and one child is probably more representative for the urban contexts of Argentina, Germany and Japan than the rural settings. Thus, it would be interesting to see if and how our observed patterns are changed when more people (especially more children and extended family members) take part in the meal. Based on our current findings, we would anticipate similar rates of change across cultural settings. For example, we would expect that the presence of a second child would lower the rate of talk addressed to the other child in a similar way in all cultural settings. Of course, this prediction -- as well as all our results -- can only generalize to cultural settings in which the interaction format of joint mealtimes exists. 
 
 Furthermore, our sample was a convenience sample in that we relied on established contacts and collaborations to recruit families in different settings. As such, the grouping into rural and urban contexts is confounded with the normative belief systems of particular regions. Thus, we do not think that living in a rural setting per se affects communicative interactions in a systematic way but the specific cultural norms and practices associated with rural subsistence in these settings produced the patterns we observed. Future work should combine our quantitative approach with a qualitative assessment of the local norms surrounding communication and mealtime to better understand the link between norms, values and beliefs and communicative behavior. 
 
@@ -1177,7 +1193,7 @@ Finally, we did not obtain a measure of children’s language abilities. As such
 
 # Conclusions
 
-Our findings offer important insights into the variable and constant aspects of children’s language learning environments across diverse cultural settings. For all aspects of communication we investigated in the current study, a common pattern emerged across cultural settings suggesting that children can rely on similar information sources and learning processes. This common pattern was attenuated in some of the settings in a way that likely reflected particular local norms, values, beliefs and ecologies. This exemplifies the importance of quantitative cross-cultural research for theory building in language acquisition.
+Our findings offer important insights into the variable and constant aspects of children’s language learning environments across diverse cultural settings. For all aspects of communication we investigated in the current study, a common pattern emerged across cultural settings suggesting that children can rely on similar information sources and learning processes. This common pattern was modified in some of the settings in a way that might reflect particular local norms, values, beliefs and ecologies. This exemplifies the importance of quantitative cross-cultural research for theory building in language acquisition.
 
 \newpage
 

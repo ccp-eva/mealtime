@@ -16,6 +16,9 @@
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
+
+manuscript/revision/
+
 *~
 \#*\#
 /.emacs.desktop
