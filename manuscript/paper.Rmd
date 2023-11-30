@@ -6,8 +6,8 @@ author:
   - name          : "Manuel Bohn"
     affiliation   : "1,2"
     corresponding : yes    # Define only one corresponding author
-    address       : "Max Planck Institute for Evolutionary Anthropology, Deutscher Platz 6, 04103 Leipzig, Germany"
-    email         : "manuel_bohn@eva.mpg.de"
+    address       : "Institute of Psychology in Education, Leuphana University Lüneburg, Universitätsallee 1, 21335 Lüneburg, Germany"
+    email         : "manuel.bohn@leuphana.de"
     role:         # Contributorship roles (e.g., CRediT, https://casrai.org/credit/)
       - Conceptualization
       - Methodology
@@ -66,7 +66,7 @@ author:
 
 affiliation:
   - id            : "1"
-    institution   : "Institute of Psychology, Leuphana University Lüneburg, Lüneburg, Germany"
+    institution   : "Institute of Psychology in Education, Leuphana University Lüneburg, Lüneburg, Germany"
   - id            : "2"
     institution   : "Department of Comparative Cultural Psychology, Max Planck Institute for Evolutionary Anthropology, Leipzig, Germany"
   - id            : "3"
@@ -86,10 +86,10 @@ authornote: |
   This research was funded by a grant from Volkswagen Foundation (89611–2), awarded to P.K.. The data assessment in Kyoto was partly funded by a JSPS Fellowship to M.K.. M.B. was supported by a Jacobs Foundation Research Fellowship. We would like to thank all the research assistants who supported the data assessments and coding: Phileas Heim, Chisato Fukuda, Julia Ohlendorf, Marlene Abromeit. We are grateful to Luke Maurits for statistical advice. All data and analysis code can be found in the following repository: https://github.com/ccp-eva/mealtime.
 
 abstract: |
-  Children all over the world learn language, yet, the contexts in which they do so varies substantially. This variation needs to be systematically quantified to build robust and generalizable theories of language acquisition. We compared communicative interactions between parents and their two-year-old children (N = 99 families) during mealtime across five cultural settings (Brazil, Ecuador, Argentina, Germany, Japan) and coded the amount of talk and gestures as well as their conversational embedding (interlocutors, function, themes). We found a comparable pattern of communicative interactions across cultural settings, which were modified in ways that are consistent with local norms and values. These results suggest that children encounter similarly structured communicative environments across diverse cultural contexts and will inform theories of language learning.  
+  Children all over the world learn language, yet, the contexts in which they do so vary substantially. This variation needs to be systematically quantified to build robust and generalizable theories of language acquisition. We compared communicative interactions between parents and their two-year-old children (N = 99 families) during mealtime across five cultural settings (Brazil, Ecuador, Argentina, Germany, Japan) and coded the amount of talk and gestures as well as their conversational embedding (interlocutors, function, themes). We found a comparable pattern of communicative interactions across cultural settings, which were modified in ways that are consistent with local norms and values. These results suggest that children encounter similarly structured communicative environments across diverse cultural contexts and will inform theories of language learning.  
   
 keywords          : "Language acquisition, Communication, Gesture, Cross-cultural psychology, Parent-child interaction"
-wordcount         : "8454"
+wordcount         : "8451"
 
 bibliography      : "library.bib"
 
@@ -103,7 +103,7 @@ tablelist         : no
 footnotelist      : no
 
 classoption       : "man"
-output            : papaja::apa6_docx
+output            : papaja::apa6_pdf
 ---
 
 ```{r setup, include = FALSE}
@@ -1043,7 +1043,7 @@ knitr::include_graphics("../visuals/fig3.png")
 #             recipient_mother = sum(recipient=="m", na.rm = T),
 #             recipient_child = sum(recipient=="c", na.rm = T),
 #             Themes = length(unique(theme)),
-#             Rounds = mean(as.numeric(round), na.rm = T))%>%
+#             Utterances = mean(as.numeric(round), na.rm = T))%>%
 #   select(-c(no_questions,no_assertions,no_imperatives,utterances, recipient_father, recipient_mother, recipient_child))%>%ungroup()
 # 
 # cluster2 <- data%>%
@@ -1104,7 +1104,7 @@ knitr::include_graphics("../visuals/fig3.png")
 ```{r}
 # profil <- as_tibble(final$centers, rownames = "Cluster")%>%
 #   pivot_longer( cols = c(2:12), names_to = "dimension", values_to = "value") %>%
-#   mutate(dimension = factor(dimension, levels = rev(c("Non-talk","Father speaker","Mother speaker","Child speaker","Speakers per theme", "Rounds","Themes","Questions","Assertions","Imperatives","Gestures"))),
+#   mutate(dimension = factor(dimension, levels = rev(c("Non-talk","Father speaker","Mother speaker","Child speaker","Speakers per theme", "Utterances","Themes","Questions","Assertions","Imperatives","Gestures"))),
 #          Cluster = factor(Cluster))%>%
 #   arrange(dimension)%>%
 #   ggplot(., aes(x = value, y = dimension, col = Cluster))+
