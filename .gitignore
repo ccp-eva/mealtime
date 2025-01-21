@@ -19,6 +19,8 @@
 
 manuscript/revision/
 
+data/data_w_utterance.csv
+
 *~
 \#*\#
 /.emacs.desktop
